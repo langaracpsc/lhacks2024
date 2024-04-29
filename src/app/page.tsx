@@ -1,5 +1,7 @@
 export default function Home() {
   return (
-    <>Hello World</>
+    <>Hello World
+      <a href="./Main">Go to main page</a>
+    </>
   );
 }
