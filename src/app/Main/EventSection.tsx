@@ -16,7 +16,7 @@ export default function EventSection(){
             <div className="flex flex-col justify-start align-baseline gap-10">
                 
 
-                <h1 className="text-5xl">Event Description</h1>
+                <h1 className="text-5xl max-[854px]:text-4xl max-[565px]:text-3xl">Event Description</h1>
 
             
                 <div className="flex flex-row gap-10 align-baseline ">
@@ -29,7 +29,7 @@ export default function EventSection(){
 
                     
 
-                    <Image src={imgTouse} alt="not working"  width={400} height={300} className="rounded-lg"/>
+                    <Image src={imgTouse} alt="not working"  width={400} height={300} className="rounded-lg max-[854px]:w-52  max-[854px]:h-52 max-[633px]:hidden"/>
                 </div>
 
             </div>

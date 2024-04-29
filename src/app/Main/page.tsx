@@ -3,7 +3,7 @@
 import EventSection from "./EventSection"
 import SponsorSection from "./SponsorSection"
 import AskedQuestions from "./AskedQuestions"
-import Carousel from "./Carousel"
+import CarouselDisplay from "./CarouselDisplay"
 
 
 export default function Main(){
@@ -11,7 +11,7 @@ export default function Main(){
     return(<>
             <div className=" flex w-screen h-screen flex-col gap-5 items-center">
 
-            <Carousel/>
+            <CarouselDisplay/>
             <EventSection/>
 
              
