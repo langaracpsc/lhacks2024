@@ -17,6 +17,7 @@ import imgCarousel1 from "../../../assets/ImageCarousel1.webp"
 import imgCarousel2 from "../../../assets/ImageCarousel2.webp"
 import imgCarousel3 from "../../../assets/ImageCarousel3.webp"
 import imgCarousel4 from "../../../assets/ImageCarousel4.webp"
+import imgCarousel5 from "../../../assets/ImageCarousel5.webp"
 
 
 import Autoplay from "embla-carousel-autoplay"
@@ -31,9 +32,9 @@ interface ImgSamples {
 export default function CarouselDisplay() {
 
 
-    let content: ImgSamples = { imageArray: [imgCarousel1, imgCarousel2, imgCarousel3, imgCarousel4] }
+    let content: ImgSamples = { imageArray: [imgCarousel1, imgCarousel2, imgCarousel3, imgCarousel4,imgCarousel5] }
     const plugin:any = React.useRef(
-        Autoplay({ delay: 2000, stopOnInteraction: true })
+        Autoplay({ delay: 1500, stopOnInteraction: true })
         
     )
 
@@ -63,9 +64,9 @@ export default function CarouselDisplay() {
                         {content.imageArray.map((item, index) => (
                             <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
                                 <div className="">
-                                    <Card>
-                                        <CardContent className=" w-fit h-fit">
-                                            <Image src={item} alt={"Not working"} height={1000} width={1000} className="rounded-lg" />
+                                    <Card className="flex gap-10">
+                                        <CardContent className=" w-screen   ">
+                                            <Image src={item} alt={"Not working"} height={4000} width={4000} className="rounded-lg w-44 " />
                                         </CardContent>
                                     </Card>
                                 </div>

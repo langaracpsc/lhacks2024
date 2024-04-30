@@ -9,7 +9,7 @@ import CarouselDisplay from "./CarouselDisplay"
 export default function Main(){
 
     return(<>
-            <div className=" flex w-screen h-screen flex-col gap-5 items-center">
+            <div className=" flex w-screen h-screen flex-col gap-5 items-center overflow-x-hidden">
 
             <CarouselDisplay/>
             <EventSection/>
