@@ -41,7 +41,7 @@ export default function CarouselDisplay() {
     return (<>
 
 
-        <div className="flex flex-col items-center gap-7">
+        <div className="flex flex-col items-center justify-center gap-7">
 
             <div className="flex flex-col items-center gap-2">
                 <h1 className="text-3xl">Memories from 2023</h1>
@@ -52,21 +52,21 @@ export default function CarouselDisplay() {
             </div>
             <div className="w-screen flex items-center justify-center">
                 <Carousel
-                    className=" w-11/12"
+                    className="w-11/12"
                     plugins={[plugin.current]}
                     opts={{
-                        align: "start",
+                        align: "center",
                         loop: true,
                         direction:"ltr",
                       }}
                 >
-                    <CarouselContent className=" flex flex-row gap-y-5 w-screen">
+                    <CarouselContent className="-ml-2 md:-ml-4">
                         {content.imageArray.map((item, index) => (
-                            <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                                <div className="w-fit h-fit">
+                            <CarouselItem key={index} className="md:basis-1/2 lg:basis-screen pl-[10px]">
+                                <div className="">
                                     <Card className="">
                                         <CardContent className=" ">
-                                            <Image src={item} alt={"Not working"} height={4000} width={4000} className="rounded-lg h-[300px] w-[600px]" />
+                                            <Image src={item} alt={"Not working"} height={1000} width={1000} className="rounded-lg" />
                                             
                                         </CardContent>
                                     </Card>
