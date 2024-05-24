@@ -52,7 +52,7 @@ export default function CarouselDisplay() {
             </div>
             <div className="w-screen flex items-center justify-center">
                 <Carousel
-                    className="w-11/12"
+                    className="w-10/12"
                     plugins={[plugin.current]}
                     opts={{
                         align: "center",

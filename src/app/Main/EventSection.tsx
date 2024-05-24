@@ -11,12 +11,12 @@ export default function EventSection(){
         <>
 
     
-        <div className="flex flex-col border border-orange-500 rounded-lg w-11/12 h-fit justify-start items-center align-baseline  pt-8 pr-8 pb-8 pl-8">
+        <div className="flex flex-col border border-orange-500 rounded-lg w-10/12 h-fit justify-start items-center align-baseline  pt-10 pr-10 pb-10 pl-10">
             
             <div className="flex flex-col justify-start align-baseline gap-10">
                 
 
-                <h1 className="text-5xl max-[854px]:text-4xl max-[565px]:text-3xl">Event Description</h1>
+                <h1 className="text-5xl max-[854px]:text-4xl max-[565px]:text-2xl">Event Description</h1>
 
             
                 <div className="flex flex-row gap-10 align-baseline ">
