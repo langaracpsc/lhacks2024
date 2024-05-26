@@ -11,7 +11,7 @@ export default function EventSection(){
         <>
 
     
-        <div className="flex flex-col border border-orange-500 rounded-lg w-10/12 h-fit justify-start items-center align-baseline  pt-10 pr-10 pb-10 pl-10">
+        <div className="flex flex-col  border-2  border-orange-500 rounded-lg w-10/12 h-fit justify-start items-center align-baseline  pt-10 pr-10 pb-10 pl-10">
             
             <div className="flex flex-col justify-start align-baseline gap-10">
                 
