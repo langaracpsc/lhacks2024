@@ -3,7 +3,7 @@ import SponsorsLogosFooter from "./logos";
 
 export default function Footer(){
     return(
-        <footer>
+        <footer className="w-screen">
             <div data-carousel="slide" className="logosSection w-[100%] flex flex-row justify-between overflow-x-hidden overflow-y-visible whitespace-nowrap p-[0.5em] slide-right">
                 <SponsorsLogosFooter></SponsorsLogosFooter>
             </div>
