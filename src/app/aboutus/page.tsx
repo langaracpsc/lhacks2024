@@ -1,3 +1,4 @@
+import Footer from "../Footer/footer";
 import About from "./about";
 import Events from "./events";
 import Execs from "./execs";
@@ -14,6 +15,7 @@ export default function aboutUsPage(){
         <About/>
         <Events/>
         <Execs/>
+        <Footer/>
         </div>
     
     </>)
