@@ -62,7 +62,7 @@ export default function CarouselDisplay() {
                 >
                     <CarouselContent className="-ml-2 md:-ml-4">
                         {content.imageArray.map((item, index) => (
-                            <CarouselItem key={index} className="md:basis-1/2 lg:basis-screen pl-[10px]">
+                            <CarouselItem key={index} className="md:basis-1/2 lg:basis-screen pl-[10px] ">
                                 <div className="">
                                     <Card className="">
                                         <CardContent className=" ">
