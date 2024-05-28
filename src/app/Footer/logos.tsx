@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
 import { animate, motion } from 'framer-motion';
-import { useEffect} from 'react';
+import { useEffect, useState} from 'react';
 import { useMotionValue } from 'framer-motion';
 import useMeasure from 'react-use-measure'
 import Image from 'next/image';
@@ -10,7 +10,14 @@ import Image from 'next/image';
 
 export default function SponsorsLogosFooter () {
     const images: any[] = [require('./logoSample.jpg'), require('./logoSample.jpg'),require('./logoSample.jpg'),
-    require('./logoSample.jpg'),require('./logoSample.jpg')];
+    require('./logoSample.jpg'), require('./logoSample.jpg'),require('./logoSample.jpg')];
+
+    const [imagesWidth, setWidth] = useState<number>(25);
+
+    useEffect(() => {
+        setWidth(100 / images.length)
+    }
+    , [images]);
 
     let [ref, {width}] = useMeasure();
     const xTransition = useMotionValue(0);
@@ -33,7 +40,7 @@ export default function SponsorsLogosFooter () {
         <>
             <motion.div ref={ref} className="flex justify-between w-[100%]" style={{x: xTransition}}>
                 {[...images,...images].map((image, index) => (
-                    <div key={index} className="flex-shrink-0 w-[20%] h-[50px]">
+                    <div key={index} className={`flex-shrink-0 h-[50px]`} style={{ width: `${imagesWidth}%`}}>
                         <div className="flex items-center justify-center h-full">
                           <Image 
                                   src={image}
