@@ -12,6 +12,7 @@ interface QuestionType {
     answer:string
 
 }
+
 let state =false
 
 function ChangeColors(){

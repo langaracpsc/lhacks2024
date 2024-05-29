@@ -1,5 +1,5 @@
 import Footer from "./Footer/footer";
-import HandbookPage from "./Handbook/HandbookUnite";
+import HandbookPage from "./handbook/HandbookUnite";
 import Header from "./Header/header";
 export default function Home() {
   

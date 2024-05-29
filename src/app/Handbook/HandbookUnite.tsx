@@ -3,7 +3,7 @@ import Location from "./Location";
 import Awards from "./Awards";
 import MiniEvents from "./MiniEvents";
 
-export default function HandbookPage() {
+export default function HandbookUnite() {
     let day1Events: string[][] = [["Registration Begins", "8:00"], 
     ["Registration Ends", "10:00"], 
     ["Lunch time", "12:00"],["Registration Begins", "8:00"], 
