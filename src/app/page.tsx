@@ -1,14 +1,13 @@
-import About from "./aboutus/about";
-import Execs from "./aboutus/execs";
-import Events
- from "./aboutus/events";
+import Footer from "./Footer/footer";
+import HandbookPage from "./Handbook/HandbookUnite";
+import Header from "./Header/header";
 export default function Home() {
+  
   return (
-    <div>
-      <About></About>
-      <Events></Events>
-      <Execs></Execs>
+    <div className="min-h-screen container gap-14">
+          <Header></Header>
+          <HandbookPage></HandbookPage>
+          <Footer></Footer>
     </div>
-    
   );
 }

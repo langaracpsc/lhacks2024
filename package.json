@@ -9,9 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
+    "framer-motion": "^11.2.2",
+    "hamburger-react": "^2.5.1",
     "next": "14.1.0",
     "react": "^18",
-    "react-dom": "^18"
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "^18",
+    "react-use-measure": "^2.1.1",
+    "resize-observer-polyfill": "^1.5.1"
   },
   "devDependencies": {
     "@types/node": "^20",
