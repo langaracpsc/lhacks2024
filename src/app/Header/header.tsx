@@ -1,6 +1,7 @@
 'use client';
 import { useState, useEffect } from 'react';
 import Hamburger from 'hamburger-react';
+import { useRouter } from 'next/navigation';
 
 export default function Header(){
     const [displayCheck, setDisplayCheck] = useState(true);
@@ -9,6 +10,7 @@ export default function Header(){
         setIsOpen(!isOpen);
     };
 
+    const router = useRouter()
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth < 1000) {
@@ -26,13 +28,21 @@ export default function Header(){
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
+    function redirectAboutUs(){
+        router.push("/aboutus")
+    }
+    function redirectMain(){
+        router.push("/")
+    }
+    
+
     return(
-        <header className={`flex flex-col items-center w-full h-[50vw] ${displayCheck ? 'bg-[url("/headerBackground2.jpg")] bg-center bg-no-repeat bg-cover' : ''}`}>
+        <header className={`flex flex-col items-center w-full h-[50vw]  ${displayCheck ? 'bg-[url("/headerBackground2.jpg")] bg-center bg-no-repeat bg-cover' : ''}`}>
             <div className="w-full h-full flex flex-col justify-center box-border bg-gradient-to-b from-transparent to-black to-75%">
                 <div className={`upperHeader flex w-full flex-row ${displayCheck ? 'p-[2em] justify-between': 'p-[2em]'} bg-black bg-opacity-90 fixed top-0 left-0 ${isOpen ? 'flex-col h-full justify-center': ''}`}>
                     <div className={`buttons ml-[2em] ${displayCheck || isOpen ? '': 'hidden'} ${isOpen ? 'flex flex-col ml-0 ml-[10vw] w-[100%]': ''}`}>
-                        <button className={`mr-[1em] hover:text-orange-600 font-bold text-left ${isOpen ? 'font-normal mr-0 my-[0.5em] border-b-[1px] border-solid border-white text-4xl': 'text-lg'}`}>Main</button>
-                        <button className={`mr-[1em] hover:text-orange-600 font-bold text-left ${isOpen ? 'font-normal mr-0 my-[0.5em] border-b-[1px] border-solid border-white text-4xl': 'text-lg'}`}>About Us</button>
+                        <button onClick={redirectMain}  className={`mr-[1em] hover:text-orange-600 font-bold text-left ${isOpen ? 'font-normal mr-0 my-[0.5em] border-b-[1px] border-solid border-white text-4xl': 'text-lg'}`}>Main</button>
+                        <button onClick={redirectAboutUs} className={`mr-[1em] hover:text-orange-600 font-bold text-left ${isOpen ? 'font-normal mr-0 my-[0.5em] border-b-[1px] border-solid border-white text-4xl': 'text-lg'}`}>About Us</button>
                         <button className={`mr-[1em] hover:text-orange-600 font-bold text-left ${isOpen ? 'font-normal mr-0 my-[0.5em] border-b-[1px] border-solid border-white text-4xl': 'text-lg'}`}>Handbook</button>
                     </div>
 

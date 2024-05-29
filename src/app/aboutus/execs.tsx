@@ -2,35 +2,36 @@ import Image from 'next/image';
 
 export default function Execs() {
   return (
-    <div className="flex flex-col items-center px-4 sm:px-8 md:px-16 lg:px-32">
-      <div className="m-8">
-        <h1 className="text-6xl text-center">OUR EXECS</h1>
+    <div className="flex flex-col items-center justify-center w-screen">
+      <div className=' mb-8'>
+        <h1 className="text-6xl max-[1088px]:text-4xl max-[716px]:text-3xl">OUR EXECS</h1>
       </div>
 
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center max-[900px]:w-9/12 ">
         <div className="flex flex-col items-center w-48 m-4">
-          <Image src={require("../images/andy.jpg")} className="w-full rounded-md" alt="Anderson Tseng" />
+          <Image src={require("../images/andy.jpg")} className="w-full rounded-md  h-64" alt="Anderson Tseng" />
           <h1 className="text-2xl text-center mt-2">Anderson Tseng</h1>
           <h2 className="text-center">President</h2>
         </div>
         <div className="flex flex-col items-center w-48 m-4">
-          <Image src={require("../images/mohit.jpg")} className="w-full rounded-md" alt="Mohit Saxena" />
+          <Image src={require("../images/mohit.jpg")} className="w-full rounded-md h-64" alt="Mohit Saxena" />
           <h1 className="text-2xl text-center mt-2">Mohit Saxena</h1>
           <h2 className="text-center">Vice President - External</h2>
         </div>
+        
         <div className="flex flex-col items-center w-48 m-4">
-          <Image src={require("../images/saemi.jpg")} className="w-full rounded-md" alt="Saemi Park" />
+          <Image src={require("../images/saemi.jpg")} className="w-full rounded-md h-64" alt="Saemi Park" />
           <h1 className="text-2xl text-center mt-2">Saemi Park</h1>
           <h2 className="text-center">Vice President - Internal</h2>
         </div>
         <div className="flex flex-col items-center w-48 m-4">
-          <Image src={require("../images/aaron.jpg")} className="w-full rounded-md" alt="Aaron Chen" />
+          <Image src={require("../images/aaron.jpg")} className="w-full rounded-md h-64" alt="Aaron Chen" />
           <h1 className="text-2xl text-center mt-2">Aaron Chen</h1>
           <h2 className="text-center">Lead Hackathon Coordiantor</h2>
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center max-[900px]:w-9/12">
       <div className="flex flex-col items-center w-48 m-4">
           <Image src={require("../images/rishit.jpg")} className="w-full rounded-md" alt="Rishit Singh" />
           <h1 className="text-2xl text-center mt-2">Rishit Singh</h1>
@@ -48,12 +49,12 @@ export default function Execs() {
         </div>
         <div className="flex flex-col items-center w-48 m-4">
           <Image src={require("../images/andy.jpg")} className="w-full rounded-md" alt="Felipe Barrosmoura" />
-          <h1 className="text-2xl text-center mt-2">Felipe Barrosmoura</h1>
+          <h1 className="text-2xl text-center mt-2">Felipe Barros Moura</h1>
           <h2 className="text-center">Developer</h2>
         </div>
       </div>
 
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center max-[900px]:w-9/12">
       <div className="flex flex-col items-center w-48 m-4">
           <Image src={require("../images/andrew.jpg")} className="w-full rounded-md" alt="Andrew Lee" />
           <h1 className="text-2xl text-center mt-2">Andrew Lee</h1>
@@ -76,7 +77,7 @@ export default function Execs() {
         </div>
         
       </div>
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center max-[900px]:w-9/12">
       <div className="flex flex-col items-center w-48 m-4">
           <Image src={require("../images/ale.jpg")} className="w-full rounded-md" alt="Ale" />
           <h1 className="text-2xl text-center mt-2">Alejandra Arce</h1>
