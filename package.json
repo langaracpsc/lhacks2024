@@ -29,7 +29,7 @@
     "react-dom": "^18",
     "react-use-measure": "^2.1.1",
     "tailwind-merge": "^2.3.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7", 
     "react-bootstrap": "^2.10.2",
     "react-dom": "^18",
     "react-use-measure": "^2.1.1",
