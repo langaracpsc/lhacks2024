@@ -37,8 +37,16 @@ export default function HandbookUnite() {
 
     return (
         <div className="flex flex-col items-center box-border my-[2em]">
-            <div className="flex flex-col items-center my-10">
-                <h1 className="text-4xl">Schedule</h1>
+            
+            {/* 
+
+            IF YOU NEED THIS LATER YOU CAN UNCOMMENT IT 
+            FOR NOW SCHEDULE ISNT CONFIRMED
+
+            */}
+
+            {/* <div className="flex flex-col items-center my-10">
+                <h1 className="text-4xl">Hackathon Schedule</h1>
                 <div className="flex flex-col flex-left w-[90vw]">
                     <Schedule
                         dayEvents={day1Events}
@@ -49,25 +57,34 @@ export default function HandbookUnite() {
                         dayNum={2}></Schedule>
 
                 </div>
-            </div>
+            </div> */}
 
             <Location></Location>
 
 
             <div className="flex flex-col items-center w-[80vw] my-10">
-                <h1 className="text-4xl">Awards</h1>
+                <h1 className="text-4xl">Prize Tracks</h1>
                 <Awards awards={awards}></Awards>
             </div>
+            
+            <div className="flex flex-col items-center w-[80vw] my-10">
+                <h1 className="text-4xl mb-[1em]">Mini Events</h1>
+                <MiniEvents miniEvents={miniEvent}></MiniEvents>
+            </div>
 
+            {/* 
+
+            THIS INFORMATION SHOULD PROBABLY BE IN THE HACKERS PRE-HACKATHON PACKAGE
+            THEY DONT NEED TO HAVE HEADERS ON THE WEBSITE
+            
+            */}
+
+            {/* 
             <div className="flex flex-col items-center w-[80vw] my-10">
                 <h1 className="text-4xl mb-[1em]">Submissions</h1>
                 <p className="text-justify">Projects will be submitted on the Langara Hacks Devpost. Be sure to submit your project there and nominate yourself for theh awards you qualify for before judging begins at 6:00pm. Also be sure to check out other people’s submissions.</p>
             </div>
 
-            <div className="flex flex-col items-center w-[80vw] my-10">
-                <h1 className="text-4xl mb-[1em]">Mini Events</h1>
-                <MiniEvents miniEvents={miniEvent}></MiniEvents>
-            </div>
 
             <div className="flex flex-col items-center w-[80vw] my-10">
                 <h1 className="text-4xl mb-[1em]">Meals</h1>
@@ -78,7 +95,7 @@ export default function HandbookUnite() {
             <div className="flex flex-col items-center w-[80vw] my-10">
                 <h1 className="text-4xl mb-[1em] text-center">Presentations and Judging</h1>
                 <p className="text-justify">Projects will be submitted on the Langara Hacks Devpost. Be sure to submit your project there and nominate yourself for theh awards you qualify for before judging begins at 6:00pm. Also be sure to check out other people’s submissions.</p>
-            </div>
+            </div> */}
 
         </div>
     )
