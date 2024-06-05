@@ -15,6 +15,7 @@ export default function Footer(){
             </div> */}
 
             
+            {/* TODO: ADD A LOT MORE STUFF HERE SUCH AS EMAIL AND SOCIAL MEDIA LINKS */}
             <div className="w-100 h-10 m-10">
                 <p>Made with love by the <a href="https://www.langaracs.ca/">Langara Computer Science Club</a>.</p>
             </div>
