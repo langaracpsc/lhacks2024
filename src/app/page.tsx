@@ -30,13 +30,19 @@ export default function Home() {
 
       
 
-      {/* I really like this component but it doesn't really make sense in a hackathon page */}
+      {/* I really like this component but it doesn't make sense in a hackathon page */}
       {/* <Events /> */}
       
-      <Execs />
-
+      {/*
+      I think there is some good discussion on how much highlighting to put on the execs 
+      who are after all putting the show on 
+      this is way too big though
+      */}
+      {/* <Execs /> */}
       
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
+
+
     </div>
   );
 }
