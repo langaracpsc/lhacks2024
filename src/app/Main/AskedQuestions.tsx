@@ -14,7 +14,7 @@ interface Questions{
 export default function AskedQuestions(){
 
     let contentQuestions: Questions = {
-        question :["What is teh event about","-","-","-","-","-","-","-","-","-","-","-"],
+        question :["What is the event about","-","-","-","-","-","-","-","-","-","-","-"],
         answer:["Is about being friendly","-","-","-","-","-","-","-","-","-","-","-"]
     }
 
