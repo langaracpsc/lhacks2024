@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 export default function Execs() {
   return (
-    <div className="flex flex-col items-center justify-center w-screen">
+    <div className="flex flex-col items-center justify-center w-100">
       <div className=' mb-8'>
         <h1 className="text-6xl max-[1088px]:text-4xl max-[716px]:text-3xl">OUR EXECS</h1>
       </div>
