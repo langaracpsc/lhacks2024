@@ -1,4 +1,3 @@
-import Module from "module";
 import SponsorsLogosFooter from "./logos";
 
 export default function Footer(){
