@@ -17,11 +17,11 @@ export default function HandbookUnite() {
 
     let awards: string[][][] = [
         [
-            ["Award 1", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been "],
-            ["Award 2", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been "]],
-        [
-            ["Award 3", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been "],
-            ["Award 4", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been "]
+            ["First Place", "Prizes TBD."],
+            ["Second Place", "Prizes TBD."]
+        ],[
+            ["Judge Favourite", "Prizes TBD."],
+            ["Audience Favourite", "Prizes TBD."]
         ]
     ]
 
@@ -41,8 +41,10 @@ export default function HandbookUnite() {
             {/* 
 
             IF YOU NEED THIS LATER YOU CAN UNCOMMENT IT 
-            FOR NOW SCHEDULE ISNT CONFIRMED
-
+            FOR NOW SCHEDULE ISNT CONFIRMED (the component is quite clean though)
+            having such a big scrolling area in the center of the screen is an anti-pattern,
+            I would suggest just making it full height 
+            put day 1 and 2's schedules side to side if neccessary
             */}
 
             {/* <div className="flex flex-col items-center my-10">
@@ -62,21 +64,24 @@ export default function HandbookUnite() {
             <Location></Location>
 
 
-            <div className="flex flex-col items-center w-[80vw] my-10">
+            {/* IF YOU WANT TO USE THIS COMPONENT THEN YOU NEED TO FIX THE CSS AND CONFIRM PRIZE TRACKS WITH LOGISTICS */}
+            
+            {/* <div className="flex flex-col items-center w-[80vw] my-10">
                 <h1 className="text-4xl">Prize Tracks</h1>
                 <Awards awards={awards}></Awards>
-            </div>
+            </div> */}
             
-            <div className="flex flex-col items-center w-[80vw] my-10">
+            {/* AGAIN. THIS CANT BE PUT ON THE WEBSITE UNLESS YOU ASK LOGISTICS WHAT MINI EVENTS THERE WILL BE */}
+            {/* <div className="flex flex-col items-center w-[80vw] my-10">
                 <h1 className="text-4xl mb-[1em]">Mini Events</h1>
                 <MiniEvents miniEvents={miniEvent}></MiniEvents>
-            </div>
+            </div> */}
+
+
 
             {/* 
-
-            THIS INFORMATION SHOULD PROBABLY BE IN THE HACKERS PRE-HACKATHON PACKAGE
-            THEY DONT NEED TO HAVE HEADERS ON THE WEBSITE
-            
+            THE FOLLOWING INFORMATION SHOULD PROBABLY BE IN THE HACKERS PRE-HACKATHON PACKAGE
+            THIS INFORMATION DOESNT NEED TO BE ON THE WEBSITE
             */}
 
             {/* 
