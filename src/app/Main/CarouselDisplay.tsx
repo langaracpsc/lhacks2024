@@ -34,7 +34,7 @@ export default function CarouselDisplay() {
 
     let content: ImgSamples = { imageArray: [imgCarousel1, imgCarousel2, imgCarousel3, imgCarousel4,imgCarousel5] }
     const plugin:any = React.useRef(
-        Autoplay({ delay: 1500, stopOnInteraction: true })
+        Autoplay({ delay: 5000, stopOnInteraction: true })
         
     )
 
