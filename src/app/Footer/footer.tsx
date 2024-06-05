@@ -1,15 +1,23 @@
-import SponsorsLogosFooter from "./logos";
+import ExecMiniProfiles from "./logos";
 
 export default function Footer(){
     return(
         <footer className="w-100">
-            <div data-carousel="slide" className="logosSection w-100 flex flex-row justify-between overflow-x-hidden overflow-y-visible whitespace-nowrap slide-right">
-                <SponsorsLogosFooter></SponsorsLogosFooter>
+
+
+            {/* Is there any way to slow this down a little bit? */}
+            <div data-carousel="slide" className="logosSection flex flex-row justify-between overflow-x-hidden overflow-y-visible whitespace-nowrap slide-right">
+                <ExecMiniProfiles></ExecMiniProfiles>
             </div>
 
             {/* <div className="flex flex-row items-center justify-center bg-neutral-700">
                 <p className="text-base m-[0.3em]">qwer*qwer*qwer*qwer</p>
             </div> */}
+
+            
+            <div className="w-100 h-10 m-10">
+                <p>Made with love by the <a href="https://www.langaracs.ca/">Langara Computer Science Club</a>.</p>
+            </div>
             
         </footer>
     );
