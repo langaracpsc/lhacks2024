@@ -5,7 +5,7 @@ export default function About() {
   <div className="flex flex-row items-baseline w-screen justify-center gap-8 p-14  max-[900px]:flex-col max-[900px]:items-center max-[900px]:gap-8  ">
       <div className="flex flex-col w-1/3 justify-start items-baseline h-96 gap-6 max-[900px]:h-fit max-[900px]:items-center max-[900px]:justify-center  max-[900px]:w-2/3">
         <h1 className="text-6xl max-[1088px]:text-4xl max-[716px]:text-3xl w-max ">ABOUT US</h1>
-        <Image src={require("../images/group2023.jpg")} className="w-[10em=] rounded-md max-[900px]:w-[20em=]" alt="aboutUsPhoto" />
+        <Image src={require("../../../assets/images/group2023.jpg")} className="w-[10em=] rounded-md max-[900px]:w-[20em=]" alt="aboutUsPhoto" />
         
 
       </div>
