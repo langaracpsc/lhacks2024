@@ -80,7 +80,9 @@ const SponsorDisplay: React.FC = () => {
     };
 
     return (
-        <div className="container mx-auto p-4">
+        <div className="container mx-auto p-4 justify-center text-center">
+
+
 
             {/* HIDDEN UNTIL SPONSORS ARE CONFIRMED */}
             {/* <h2 className="text-2xl font-bold mb-4 text-center">Sponsors</h2>
@@ -88,6 +90,14 @@ const SponsorDisplay: React.FC = () => {
 
             <h2 className="text-2xl font-bold mt-8 mb-4 text-center">Past Sponsors</h2>
             {renderSponsors(sponsorsData.past)}
+
+            <div className="flex justify-center items-center h-full">
+                <a href="mailto:langaracompsciclub@gmail.com" className="text-base px-[1em] m-[1em] border-2 border-orange-600 py-[0.3em] bg-black bg-opacity-70 rounded-md hover:scale-[1.05] transition-transform duration-300">
+                    Interested in sponsoring? Reach out!
+                </a>
+            </div>
+
+
         </div>
     );
 };
