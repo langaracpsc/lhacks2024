@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 interface Sponsor {
     name: string;
-    logo: NodeRequire;
+    logo: string;
     link: string;
     size: string;
     row: number;
