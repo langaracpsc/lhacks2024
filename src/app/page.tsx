@@ -21,17 +21,14 @@ export default function Home() {
       <CarouselDisplay/>
 
       <HandbookPage></HandbookPage>
-        
-      {/* <SponsorSection/> */}
-
-      <About/>
 
       {/* 
       THIS SHOULD BE IN THE PAGE BUT I DONT HAVE TIME TO FIX IT
       PLEASE ASSIGN TO SOMEONE
       */}
-      {/* <AskedQuestions/> */}
-
+      <AskedQuestions/>
+      
+      <About/>
       
 
       {/* I really like this component but it doesn't make sense in a hackathon page */}
