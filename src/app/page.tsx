@@ -14,23 +14,25 @@ export default function Home() {
     <div className="min-h-screen flex flex-col container gap-20">
       <Header></Header>
       
+      <EventSection/>
+
+      <SponsorDisplay/>
+      
+      <CarouselDisplay/>
+
+      <HandbookPage></HandbookPage>
+        
+      {/* <SponsorSection/> */}
 
       <About/>
 
-      <HandbookPage></HandbookPage>
-      <EventSection/>
-
-        
-      {/* <SponsorSection/> */}
-      <SponsorDisplay/>
-
       {/* 
-      THIS NEEDS TO BE IN THE PAGE BUT I DONT HAVE TIME TO FIX IT
+      THIS SHOULD BE IN THE PAGE BUT I DONT HAVE TIME TO FIX IT
       PLEASE ASSIGN TO SOMEONE
       */}
       {/* <AskedQuestions/> */}
 
-      <CarouselDisplay/>
+      
 
       {/* I really like this component but it doesn't make sense in a hackathon page */}
       {/* <Events /> */}

@@ -16,7 +16,7 @@ export default function About() {
 
           {/* THIS ALSO NEEDS TO BE REWRITTEN AS WELL */}
           <p className=" w-12/12 h-auto break-words text-lg max-w-prose text-justify">
-            The Langara Computer Science Club is officially back! We are a
+            The Langara Computer Science Club is officially back! is a
             student-run club dedicated to providing a space for students
             interested in computer science at Langara to learn, network, help each
             other out, and have fun! This year, we plan to host workshops,
