@@ -22,4 +22,4 @@ RUN yarn build
 EXPOSE 3000
 
 # Specify the command to run the app
-CMD ["yarn", "serve"]
+CMD ["yarn", "start"]
