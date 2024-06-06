@@ -1,5 +1,5 @@
 # Use the official Node.js image as a base
-FROM node:21
+FROM node:21-alpine
 
 # Set the working directory
 # WORKDIR /usr/src/app
@@ -10,7 +10,7 @@ ENV NODE_PATH=/src
 COPY package.json yarn.lock ./
 
 # Install dependencies using Yarn
-RUN yarn install --network-timeout 1000000
+RUN yarn install --immutable --network-timeout 1000000
 
 # Copy the rest of the application code
 COPY . .
