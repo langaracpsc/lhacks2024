@@ -6,8 +6,6 @@ import CarouselDisplay from "./Main/CarouselDisplay";
 import EventSection from "./Main/EventSection";
 import SponsorSection from "./Main/SponsorSection";
 import About from "./aboutus/about";
-import Events from "./aboutus/events";
-import Execs from "./aboutus/execs";
 export default function Home() {
 
 
@@ -39,7 +37,7 @@ export default function Home() {
       this is way too big though
       */}
       {/* <Execs /> */}
-      
+
       <Footer></Footer>
 
 

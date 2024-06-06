@@ -2,27 +2,24 @@
 FROM node:21
 
 # Set the working directory
-WORKDIR /
+# WORKDIR /usr/src/app
 
-# Copy package.json and package-lock.json/yarn.lock first to leverage Docker cache
-# COPY package*.json ./
-# If you are using Yarn, uncomment the following line:
-COPY yarn.lock ./
+ENV NODE_PATH=/src
 
-# Install dependencies
-# RUN npm install
-# If you are using Yarn, uncomment the following line:
+# Copy package.json and yarn.lock first to leverage Docker cache
+COPY package.json yarn.lock ./
+
+# Install dependencies using Yarn
 RUN yarn install
 
 # Copy the rest of the application code
 COPY . .
 
-# Build the app
-# RUN npm run build
-# If you are using Yarn, uncomment the following line:
+# Build the app using Yarn
 RUN yarn build
 
+# Expose the port the app runs on
+EXPOSE 3000
+
 # Specify the command to run the app
-# CMD ["npm", "start"]
-# If you are using Yarn, uncomment the following line:
-CMD ["yarn", "start"]
+CMD ["yarn", "serve"]
