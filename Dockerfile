@@ -10,7 +10,7 @@ ENV NODE_PATH=/src
 COPY package.json yarn.lock ./
 
 # Install dependencies using Yarn
-RUN yarn install
+RUN yarn install --network-timeout 1000000
 
 # Copy the rest of the application code
 COPY . .
