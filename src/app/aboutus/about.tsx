@@ -16,11 +16,11 @@ export default function About() {
 
           {/* THIS ALSO NEEDS TO BE REWRITTEN AS WELL */}
           <p className=" w-12/12 h-auto break-words text-lg max-w-prose text-justify">
-            The Langara Computer Science Club is officially back! is a
+            The Langara Computer Science Club is a
             student-run club dedicated to providing a space for students
             interested in computer science at Langara to learn, network, help each
-            other out, and have fun! This year, we plan to host workshops,
-            programming competitions, and meetups
+            other out, and have fun! We host a variety of events, ranging from workshops 
+            to social events to this hackathon!
           </p>
           <br />
 
