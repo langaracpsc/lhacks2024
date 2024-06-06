@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import Hamburger from 'hamburger-react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Header() {
     const [displayCheck, setDisplayCheck] = useState(true);
@@ -98,7 +99,11 @@ export default function Header() {
                 </div>
             </div>
 
-            <img className={`flex w-[80%] self-center ${displayCheck ? '' : 'hidden'}`} src='/Group_38.svg' />
+            <Image
+                src={require("./Group_38.svg")}
+                className={`flex w-[80%] self-center ${displayCheck ? '' : 'hidden'}`}
+                alt="cool arrow below the schedule that represents the passage of time"
+            />
 
 
         </header>

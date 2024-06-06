@@ -38,7 +38,7 @@ export default function About() {
           <br />
 
           <p className="w-12/12 h-auto break-words text-lg max-w-prose text-justify">
-            We won't preach books or articles to you, rather, we make mistakes. We
+            We won&apos;t preach books or articles to you, rather, we make mistakes. We
             reinvent the wheel, going to extreme lengths just to find out how
             something really works.
           </p>
