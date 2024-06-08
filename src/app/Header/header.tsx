@@ -55,32 +55,12 @@ export default function Header(){
                     </div>
                     
                 </div>
-
-                <div className={`links mr-[4em] ${displayCheck || isOpen ? '' : 'hidden'} ${isOpen ? 'flex flex-col mr-0 ml-0 ml-[10vw] w-[100%]' : ''} `}>
-                    <a className={`ml-[1em] text-orange-600 hover:text-white text-left ${isOpen ? 'ml-0 my-[0.5em] border-b-[1px] border-solid border-orange-600 text-2xl' : 'text-lg'}`}>Sponsors</a>
-                    <a className={`ml-[1em] text-orange-600 hover:text-white text-left ${isOpen ? 'ml-0 my-[0.5em] border-b-[1px] border-solid border-orange-600 text-2xl' : 'text-lg'}`}>FAQ</a>
-                </div>
-                <div className={`absolute right-[0.7em] top-[0.7em] ${displayCheck ? 'hidden' : ''}`}>
-                    <Hamburger direction="left" onToggle={toggleNavBar}></Hamburger>
-                </div>
-            </div>
-
-            <div className={`h-[100px]`}></div>
-
-
-            {/* HERO IMAGE AND REGISTRATION AND MENTOR BUTTON */}
-            <div className="relative items-center w-full h-[50vh] max-h-500px bg-center bg-no-repeat bg-cover rounded-md bg-[url('/headerBackground2.jpg')]">
-                <div className={`bg-black bg-opacity-50 h-[50vh]`}>
-
-                    <div className={`central part flex flex-col w-full  ${displayCheck ? 'pt-[14em]' : 'pt-[8em]'} items-center`}>
-                        <h3 className={`${displayCheck ? 'text-xl' : 'text-base'}`}>September 28 - 29 Langara College</h3>
-                        <h1 className={`${displayCheck ? 'text-7xl' : 'text-4xl'}`}><span className='text-orange-600'>Langara</span> Hacks 2024</h1>
-                        <div className="buttons flex flex-row">
-
-                            {/* UNHIDE ONCE REGISTRATION GOES LIVE */}
-                            {/* <button className={`${displayCheck ? 'text-xl px-[2em]' : 'text-base px-[1em]'} m-[1em] border-2 border-orange-600 py-[0.3em] bg-black bg-opacity-70 rounded-md hover:scale-[1.05] transition-transform duration-300`}>Apply Now</button>
-                            <button className={`${displayCheck ? 'text-xl px-[2em]' : 'text-base px-[1em]'} m-[1em] border-2 border-white py-[0.3em] bg-black bg-opacity-70 rounded-md hover:scale-[1.05] transition-transform duration-300`}>Become a Mentor</button> */}
-                        </div>
+                <div className={`central part flex flex-col w-full  ${displayCheck ? 'mt-[14em]' : 'mt-[8em]'} items-center`}>
+                    <h3 className={`${displayCheck ? 'text-xl' : 'text-base'}`}>September 21 - 22 Langara College</h3>
+                    <h1 className={`${displayCheck ? 'text-7xl' : 'text-4xl'}`}><span className='text-orange-600'>Langara</span> Hacks 2024</h1>
+                    <div className="buttons flex flex-row">
+                        <button className={`${displayCheck ? 'text-xl px-[2em]' : 'text-base px-[1em]'} m-[1em] border-2 border-orange-600 py-[0.3em] bg-black bg-opacity-70 rounded-md hover:scale-[1.05] transition-transform duration-300`}>Apply Now</button>
+                        <button className={`${displayCheck ? 'text-xl px-[2em]' : 'text-base px-[1em]'} m-[1em] border-2 border-white py-[0.3em] bg-black bg-opacity-70 rounded-md hover:scale-[1.05] transition-transform duration-300`}>Become a Mentor</button>
                     </div>
                 </div>
 
