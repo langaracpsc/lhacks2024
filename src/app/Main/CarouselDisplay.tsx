@@ -10,14 +10,15 @@ import {
     CarouselPrevious,
 } from "@/components/ui/carousel"
 import Image from "next/image"
-import { EmblaOptionsType } from 'embla-carousel'
+
+// import { EmblaOptionsType } from 'embla-carousel'
 
 
-import imgCarousel1 from "../../../assets/ImageCarousel1.webp"
-import imgCarousel2 from "../../../assets/ImageCarousel2.webp"
-import imgCarousel3 from "../../../assets/ImageCarousel3.webp"
-import imgCarousel4 from "../../../assets/ImageCarousel4.webp"
-import imgCarousel5 from "../../../assets/ImageCarousel5.webp"
+import imgCarousel1 from "../../../assets/carousel/ImageCarousel1.png"
+import imgCarousel2 from "../../../assets/carousel/ImageCarousel2.webp"
+import imgCarousel3 from "../../../assets/carousel/ImageCarousel3.webp"
+import imgCarousel4 from "../../../assets/carousel/ImageCarousel4.webp"
+import imgCarousel5 from "../../../assets/carousel/ImageCarousel5.webp"
 
 
 import Autoplay from "embla-carousel-autoplay"
@@ -34,7 +35,7 @@ export default function CarouselDisplay() {
 
     let content: ImgSamples = { imageArray: [imgCarousel1, imgCarousel2, imgCarousel3, imgCarousel4,imgCarousel5] }
     const plugin:any = React.useRef(
-        Autoplay({ delay: 1500, stopOnInteraction: true })
+        Autoplay({ delay: 5000, stopOnInteraction: true })
         
     )
 

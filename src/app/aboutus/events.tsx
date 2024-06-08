@@ -6,8 +6,8 @@ export default function Events() {
       <div className="flex flex-col w-1/3 justify-between items-baseline h-max gap-6 max-[900px]:items-center max-[900px]:justify-center  max-[900px]:w-2/3">
         <h1 className="text-6xl max-[1088px]:text-4xl max-[716px]:text-3xl ">EVENTS</h1>
           <div className="flex flex-col gap-4 w-11/12">
-            <Image src={require("../images/group1.jpg")} className="w-[10em=] rounded-md max-[900px]:w-[20em=]" alt="aboutUsPhoto"/>
-            <Image src={require("../images/group2.jpg")} className="w-[10em=] rounded-md max-[900px]:w-[20em=]" alt="aboutUsPhoto"/>
+            <Image src={require("../../../assets/images/group1.jpg")} className="w-[10em=] rounded-md max-[900px]:w-[20em=]" alt="aboutUsPhoto"/>
+            <Image src={require("../../../assets/images/group2.jpg")} className="w-[10em=] rounded-md max-[900px]:w-[20em=]" alt="aboutUsPhoto"/>
           </div>
       </div>
 
