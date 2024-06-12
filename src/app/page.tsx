@@ -11,8 +11,8 @@ export default function Home() {
 
 
   return (
-    <div className="min-h-screen flex flex-col container gap-20">
-      <Header></Header>
+    <div className="flex flex-col justify-center items-center overflow-x-clip gap-20 ">
+      <Header/>
       
       <EventSection/>
 
@@ -20,7 +20,7 @@ export default function Home() {
       
       <CarouselDisplay/>
 
-      <HandbookPage></HandbookPage>
+      <HandbookPage/>
 
       {/* 
       THIS SHOULD BE IN THE PAGE BUT I DONT HAVE TIME TO FIX IT
@@ -41,7 +41,7 @@ export default function Home() {
       */}
       {/* <Execs /> */}
 
-      <Footer></Footer>
+      <Footer/>
 
 
     </div>

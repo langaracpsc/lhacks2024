@@ -4,6 +4,7 @@ import Hamburger from 'hamburger-react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link'
 import Image from 'next/image'
+import svggroup from "./Group_38.svg"
 
 export default function Header() {
     const [displayCheck, setDisplayCheck] = useState(true);
@@ -13,6 +14,8 @@ export default function Header() {
     };
 
     const router = useRouter()
+
+
     useEffect(() => {
         const handleResize = () => {
             if (window.innerWidth < 1000) {
@@ -30,12 +33,15 @@ export default function Header() {
         return () => window.removeEventListener('resize', handleResize);
     }, []);
 
-    // function redirectAboutUs(){
-    //     router.push("/aboutus")
-    // }
-    // function redirectMain(){
-    //     router.push("/")
-    // }
+    function redirectAboutUs(){
+        router.push("/aboutus")
+    }
+    function redirectMain(){
+        router.push("/")
+    }
+    function redirectHandbook(){
+        router.push("/Handbook")
+    }
 
 
     return (
@@ -49,9 +55,9 @@ export default function Header() {
             <div className={`fixed offset top-0 left-0 z-50 flex w-full flex-row p-[2em] justify-between justify-content: flex-start;'  bg-black bg-opacity-50   ${isOpen ? 'h-full justify-center' : ''}`}>
 
                 <div className={`buttons ml-[2em] ${displayCheck || isOpen ? '' : 'hidden'} ${isOpen ? 'flex flex-col ml-0 ml-[10vw] w-[100%]' : ''}`}>
-                    <button className={`mr-[1em] hover:text-orange-600 font-bold text-left ${isOpen ? 'font-normal mr-0 my-[0.5em] border-b-[1px] border-solid border-white text-4xl' : 'text-lg'}`}>Main</button>
-                    <button className={`mr-[1em] hover:text-orange-600 font-bold text-left ${isOpen ? 'font-normal mr-0 my-[0.5em] border-b-[1px] border-solid border-white text-4xl' : 'text-lg'}`}>About Us</button>
-                    <button className={`mr-[1em] hover:text-orange-600 font-bold text-left ${isOpen ? 'font-normal mr-0 my-[0.5em] border-b-[1px] border-solid border-white text-4xl' : 'text-lg'}`}>Handbook</button>
+                    <button onClick={redirectMain} className={`mr-[1em] hover:text-orange-600 font-bold text-left ${isOpen ? 'font-normal mr-0 my-[0.5em] border-b-[1px] border-solid border-white text-4xl' : 'text-lg'}`}>Main</button>
+                    <button onClick={redirectAboutUs} className={`mr-[1em] hover:text-orange-600 font-bold text-left ${isOpen ? 'font-normal mr-0 my-[0.5em] border-b-[1px] border-solid border-white text-4xl' : 'text-lg'}`}>About Us</button>
+                    <button onClick={redirectHandbook} className={`mr-[1em] hover:text-orange-600 font-bold text-left ${isOpen ? 'font-normal mr-0 my-[0.5em] border-b-[1px] border-solid border-white text-4xl' : 'text-lg'}`}>Handbook</button>
                 </div>
 
                 <div className={`links mr-[4em] ${displayCheck || isOpen ? '' : 'hidden'} ${isOpen ? 'flex flex-col mr-0 ml-0 ml-[10vw] w-[100%]' : ''} `}>
@@ -84,7 +90,9 @@ export default function Header() {
             </div>
 
             {/* MONTHLY SCHEDULE */}
-            {/* gets hidden on mobile/small screen sizes */}
+            {/* gets hidden on mobile/small screen sizes  */}
+            
+            <div className='flex flex-col justify-center items-baseline'>
             <div className={`flex flex-row justify-between self-center mt-[3em] ${displayCheck ? '' : 'hidden'}`}>
 
                 <div className='flex flex-col justify-left mx-[5em]'>
@@ -102,10 +110,11 @@ export default function Header() {
             </div>
 
             <Image
-                src={require("./Group_38.svg")}
+                src={svggroup}
                 className={`flex w-[80%] self-center ${displayCheck ? '' : 'hidden'}`}
                 alt="cool arrow below the schedule that represents the passage of time"
             />
+            </div>
 
 
         </header>

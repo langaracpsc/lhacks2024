@@ -7,7 +7,7 @@ export default function Footer(){
 
             {/* Is there any way to slow this down a little bit? */}
             <div data-carousel="slide" className="logosSection flex flex-row justify-between overflow-x-hidden overflow-y-visible whitespace-nowrap slide-right">
-                <ExecMiniProfiles></ExecMiniProfiles>
+                <ExecMiniProfiles/>
             </div>
 
             {/* <div className="flex flex-row items-center justify-center bg-neutral-700">
