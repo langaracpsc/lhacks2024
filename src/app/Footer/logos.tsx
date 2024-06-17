@@ -1,26 +1,10 @@
 'use client';
-
-
-
-
-'use client';
 import React from 'react';
 import { animate, motion } from 'framer-motion';
 import { useEffect} from 'react';
 import { useMotionValue } from 'framer-motion';
 import useMeasure from 'react-use-measure'
 import Image, { StaticImageData } from 'next/image';
-import IconToUse1 from "../Assets/icons8-facebook (1).svg"
-import IconToUse2 from "../Assets/icons8-instagram (1).svg"
-import IconTouse3 from "../Assets/icons8-tiktok (1).svg"
-import IconToUse4 from "../Assets/icons8-snapchat.svg"
-import IconToUse5 from "../Assets/icons8-twitterx.svg"
-import iconToUse6 from "../Assets/icons8-youtube.svg"
-import IconToUse7 from "../Assets/icons8-whatsapp.svg"
-
-
-
-
 
 import imgAaron from '../../../assets/images/square/aaron.jpg';
 import imgAle from '../../../assets/images/square/ale.jpg';
@@ -46,10 +30,11 @@ interface Executives{
 }
 
 
+export default function SponsorsLogosFooter () {
 
-export default function ExecMiniProfiles(){
+    // const images: any[] = [require('./logoSample.jpg'), require('./logoSample.jpg'),require('./logoSample.jpg'),
+    // require('./logoSample.jpg'),require('./logoSample.jpg')];
 
-   
     const images: Executives[] = [
         { name: "Aaron Chen", role: "Lead Hackathon Director", image: imgAaron },
         { name: "Ale", role: "Director of PR", image: imgAle },
@@ -68,9 +53,6 @@ export default function ExecMiniProfiles(){
         { name: "Saemi Park", role: "Vice President Internal", image: imgSaemi },
         { name: "Tyler Qiu", role: "Logistics Coordinator", image: imgTyler },
       ];
-    
-
-
 
     let [ref, {width}] = useMeasure();
     const xTransition = useMotionValue(0);
@@ -81,38 +63,35 @@ export default function ExecMiniProfiles(){
 
       control = animate(xTransition, [0, finalPosition], {
         ease: 'linear',
-        duration: 40,
+        duration: 10,
         repeat: Infinity,
         repeatType: 'loop',
         repeatDelay: 0
       })
 
-      
-
       return control.stop;
     }, [xTransition, width])
     return (
         <>
-            <motion.div ref={ref} className=" gap-5 flex justify-between w-[100%] h-full" style={{ x: xTransition }}>
-                {[...images, ...images].map((exec, index) => (
-                    
-
-                    <div key={index} className="w-fit z flex-col flex items-center justify-center shrink-0">
-
-                        <div className="">
-                            <Image
-                                src={exec.image}
-                                alt="activityPicture"
-                                className="w-[75px] object-contain rounded-full"
-                                key={index}
-                            />
+            <motion.div ref={ref} className="flex justify-between w-[100%]" style={{x: xTransition}}>
+                {[...images,...images].map((image, index) => (
+                    <div key={index} className='flex flex-col gap-3'>
+                    <div  className="flex-shrink-0 w-[20%] h-[50px]">
+                        <div className="flex items-center justify-center h-full">
+                          <Image 
+                                  src={image.image}
+                                  className="h-full w-fit rounded-md"
+                                  alt="activityPicture"
+                                  key={index}
+                              />
                         </div>
+                    </div>
+                    <p className=' font-bold text-lg'>{image.name}</p>
+                    <p className='text-md'>{image.role}</p>
 
-                        <p><b>{exec.name}</b></p>
-                        <p>{exec.role}</p>
                     </div>
                 ))}
-
+                
             </motion.div>
             
         </>
