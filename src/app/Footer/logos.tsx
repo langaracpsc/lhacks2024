@@ -73,7 +73,7 @@ export default function SponsorsLogosFooter () {
     }, [xTransition, width])
     return (
         <>
-            <motion.div ref={ref} className="flex justify-between w-[100%] items-center  h-40" style={{x: xTransition}}>
+            <motion.div ref={ref} className="flex  justify-between w-[100%] items-center  h-40" style={{x: xTransition}}>
                 {[...images,...images].map((image, index) => (
                    
                     <div key={index} className="flex-shrink-0 w-[5%] h-[50px]">
