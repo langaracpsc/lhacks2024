@@ -14,7 +14,7 @@ import imgApril from '../../../assets/images/square/april.jpg';
 import imgClaire from '../../../assets/images/square/claire.jpg';
 import imgDennis from '../../../assets/images/square/dennis.jpg';
 import imgDiego from '../../../assets/images/square/diego.jpg';
-import imgFelipe from '../../../assets/images/square/andy.jpg'; // Assuming 'andy.jpg' is not for Felipe
+import imgFelipe from '../../../assets/images/square/Felipe.jpg'; // Assuming 'andy.jpg' is not for Felipe
 import imgHan from '../../../assets/images/square/han.jpg';
 import imgMatthew from '../../../assets/images/square/matthew.jpg';
 import imgMohit from '../../../assets/images/square/mohit.jpg';
@@ -44,7 +44,7 @@ export default function SponsorsLogosFooter () {
         { name: "Claire Nguyen", role: "Director of Media", image: imgClaire },
         { name: "Dennis Yong", role: "Sponsorships Coordinator", image: imgDennis },
         { name: "Diego Delgado", role: "Sponsorships Coordinator", image: imgDiego },
-        { name: "Felipe Barrosmoura", role: "Developer", image: imgFelipe },
+        { name: "Felipe Barros Moura", role: "Developer", image: imgFelipe },
         { name: "Han Fu", role: "Logistics Coordinator", image: imgHan },
         { name: "Matthew Widjaja", role: "General Representative", image: imgMatthew },
         { name: "Mohit Saxena", role: "Vice President External", image: imgMohit },
