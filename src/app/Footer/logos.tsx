@@ -63,7 +63,7 @@ export default function SponsorsLogosFooter () {
 
       control = animate(xTransition, [0, finalPosition], {
         ease: 'linear',
-        duration: 10,
+        duration: 20,
         repeat: Infinity,
         repeatType: 'loop',
         repeatDelay: 0
@@ -73,23 +73,27 @@ export default function SponsorsLogosFooter () {
     }, [xTransition, width])
     return (
         <>
-            <motion.div ref={ref} className="flex justify-between w-[100%]" style={{x: xTransition}}>
+            <motion.div ref={ref} className="flex justify-between w-[100%] items-center  h-40" style={{x: xTransition}}>
                 {[...images,...images].map((image, index) => (
-                    <div key={index} className='flex flex-col gap-3'>
-                    <div  className="flex-shrink-0 w-[20%] h-[50px]">
-                        <div className="flex items-center justify-center h-full">
+                   
+                    <div key={index} className="flex-shrink-0 w-[5%] h-[50px]">
+                        <div className="flex items-center justify-center h-full flex-col gap-3">
                           <Image 
                                   src={image.image}
-                                  className="h-full w-fit rounded-md"
+                                  className="h-[100px] w-fit  rounded-full"
                                   alt="activityPicture"
                                   key={index}
                               />
+                               <p className=' font-bold text-lg w-fit'>{image.name}</p>
+                               <p className='text-md w-fit'>{image.role}</p>
+                               
+                           
                         </div>
+                        
                     </div>
-                    <p className=' font-bold text-lg'>{image.name}</p>
-                    <p className='text-md'>{image.role}</p>
+                    
 
-                    </div>
+               
                 ))}
                 
             </motion.div>
