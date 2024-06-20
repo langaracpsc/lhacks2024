@@ -50,9 +50,9 @@ export default function ExecMiniProfiles() {
 
     const [imagesWidth, setWidth] = useState<number>(25);
 
-    // I changed scaling to 200% because of the quantity of elements
+    // I changed scaling to 300% because of the quantity of elements
     useEffect(() => {
-        setWidth(300 / people.length); // Adjust to 200% width
+        setWidth(300 / people.length); // Adjust to 300% width
     }, [people]);
 
     let [ref, { width }] = useMeasure();
@@ -60,7 +60,7 @@ export default function ExecMiniProfiles() {
 
     useEffect(() => {
         let control;
-        let finalPosition = -width * 3; // Adjust for 200% width(multiply 100% by 2)
+        let finalPosition = -width * 3; // Adjust for 300% width(multiply 100% by 3)
 
         control = animate(xTransition, [0, finalPosition], {
             ease: 'linear',
