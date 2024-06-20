@@ -11,39 +11,25 @@ export default function Home() {
 
 
   return (
-    <div className="flex flex-col justify-center items-center overflow-x-clip gap-20 ">
+    <div className="flex flex-col gap-20 overflow-x-clip">
       <Header/>
-      
-      <EventSection/>
+      <div className="flex flex-col justify-center gap-8 items-center">
+        <EventSection/>
 
-      <SponsorDisplay/>
-      
-      <CarouselDisplay/>
+        <SponsorDisplay/>
 
-      <HandbookPage/>
+        <CarouselDisplay/>
 
-      {/* 
-      THIS SHOULD BE IN THE PAGE BUT I DONT HAVE TIME TO FIX IT
-      PLEASE ASSIGN TO SOMEONE
-      */}
-      <AskedQuestions/>
-      
-      <About/>
+        <HandbookPage/>
+
+        <AskedQuestions/>
+
+        <About/>
+      </div>
+
       
 
-      {/* I really like this component but it doesn't make sense in a hackathon page */}
-      {/* <Events /> */}
-      
-      {/*
-      I think there is some good discussion on how much highlighting to put on the execs 
-      who are after all putting the show on 
-      this is way too big though
-      */}
-      {/* <Execs /> */}
-
-      <Footer/>
-
-
+      <Footer></Footer>
     </div>
   );
 }
