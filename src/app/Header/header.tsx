@@ -61,8 +61,8 @@ export default function Header() {
                 </div>
 
                 <div className={`links mr-[4em] ${displayCheck || isOpen ? '' : 'hidden'} ${isOpen ? 'flex flex-col mr-0 ml-0 ml-[10vw] w-[100%]' : ''} `}>
-                    <a className={`ml-[1em] text-orange-600 hover:text-white text-left ${isOpen ? 'ml-0 my-[0.5em] border-b-[1px] border-solid border-orange-600 text-2xl' : 'text-lg'}`}>Sponsors</a>
-                    <a className={`ml-[1em] text-orange-600 hover:text-white text-left ${isOpen ? 'ml-0 my-[0.5em] border-b-[1px] border-solid border-orange-600 text-2xl' : 'text-lg'}`}>FAQ</a>
+                    <a className={`ml-[1em] text-orange-600 hover:text-white text-left ${isOpen ? 'ml-0 my-[0.5em] border-b-[1px] border-solid border-orange-600 text-2xl' : 'text-lg'}`} onClick={()=>{router.push("/")}}>Sponsors</a>
+                    <a className={`ml-[1em] text-orange-600 hover:text-white text-left ${isOpen ? 'ml-0 my-[0.5em] border-b-[1px] border-solid border-orange-600 text-2xl' : 'text-lg'}`}  onClick={()=>{router.push("/")}} >FAQ</a>
                 </div>
                 <div className={`absolute right-[0.7em] top-[0.7em] ${displayCheck ? 'hidden' : ''}`}>
                     <Hamburger direction="left" onToggle={toggleNavBar}></Hamburger>

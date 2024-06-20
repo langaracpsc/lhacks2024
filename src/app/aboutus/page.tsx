@@ -7,7 +7,7 @@ import Execs from "./execs";
 export default function aboutUsPage(){
     return(<>
 
-        <div className="flex flex-col  gap-8 overflow-x-clip">
+        <div className="flex flex-col  gap-8 justify-center items-center overflow-x-hidden">
             <Header/>
             <About />
             <Events />
