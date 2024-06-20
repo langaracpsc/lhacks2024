@@ -19,7 +19,7 @@ export default function ExecMiniProfiles() {
         ["Claire Nguyen", "Director of Media", require('../../../assets/images/square/claire.jpg')],
         ["Dennis Yong", "Sponsorships Coordinator", require('../../../assets/images/square/dennis.jpg')],
         ["Diego Delgado", "Sponsorships Coordinator", require('../../../assets/images/square/diego.jpg')],
-        ["Felipe Barrosmoura", "Developer", require('../../../assets/images/square/andy.jpg')],
+        ["Felipe Barrosmoura", "Developer", require('../../../assets/images/square/Felipe.jpg')],
         ["Han Fu", "Logistics Coordinator", require('../../../assets/images/square/han.jpg')],
         ["Matthew Widjaja", "General Representative", require('../../../assets/images/square/matthew.jpg')],
         ["Mohit Saxena", "Vice President External", require('../../../assets/images/square/mohit.jpg')],
