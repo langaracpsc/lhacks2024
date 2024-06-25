@@ -1,5 +1,4 @@
 
-
 import eventIcon1 from './images/event1icon.svg';
 import eventIcon2 from './images/event2icon.svg';
 import eventIcon3 from './images/event3icon.svg';
@@ -39,8 +38,6 @@ export default function HandbookUnite() {
         ["Event 5", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ", eventIcon5],
         ["Event 6", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ", eventIcon6],
       ];
-
-
 
     return (
         <div className="flex flex-row items-center justify-center w-screen ">
