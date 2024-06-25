@@ -1,7 +1,12 @@
-import Schedule from "./Schedule";
-import Location from "./Location";
-import Awards from "./Awards";
-import MiniEvents from "./MiniEvents";
+
+import eventIcon1 from './images/event1icon.svg';
+import eventIcon2 from './images/event2icon.svg';
+import eventIcon3 from './images/event3icon.svg';
+import eventIcon4 from './images/event4icon.svg';
+import eventIcon5 from './images/event5icon.svg';
+import eventIcon6 from './images/event6icon.svg';
+
+import Location from './Location';
 
 export default function HandbookUnite() {
     let day1Events: string[][] = [
@@ -26,17 +31,16 @@ export default function HandbookUnite() {
     ]
 
     let miniEvent: any[][] = [
-        ["Event 1", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ", require('./images/event1icon.svg')],
-        ["Event 2", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ", require('./images/event2icon.svg')],
-        ["Event 3", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ", require('./images/event3icon.svg')],
-        ["Event 4", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ", require('./images/event4icon.svg')],
-        ["Event 5", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ", require('./images/event5icon.svg')],
-        ["Event 6", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ", require('./images/event6icon.svg')]];
-
-
+        ["Event 1", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ", eventIcon1],
+        ["Event 2", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ", eventIcon2],
+        ["Event 3", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ", eventIcon3],
+        ["Event 4", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ", eventIcon4],
+        ["Event 5", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ", eventIcon5],
+        ["Event 6", "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been ", eventIcon6],
+      ];
 
     return (
-        <div className="flex flex-col items-center box-border my-[2em]">
+        <div className="flex flex-row items-center justify-center w-screen ">
             
             {/* 
 
@@ -61,7 +65,7 @@ export default function HandbookUnite() {
                 </div>
             </div> */}
 
-            <Location></Location>
+            <Location/>
 
 
             {/* IF YOU WANT TO USE THIS COMPONENT THEN YOU NEED TO FIX THE CSS AND CONFIRM PRIZE TRACKS WITH LOGISTICS */}

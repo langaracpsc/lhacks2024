@@ -15,7 +15,6 @@ export default function MiniEvents({ miniEvents}: MiniEventsProps) {
             } else {
                 setNumItemsPerRow(2);
             }
-    
         };
 
         handleResize(); 

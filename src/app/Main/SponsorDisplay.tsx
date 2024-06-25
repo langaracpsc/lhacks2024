@@ -1,6 +1,10 @@
 import React from 'react';
 import Image from 'next/image'
 import Link from 'next/link';
+import langaraCollege from "../../../assets/sponsors/langara_logo.jpg"
+import Microserve from '../../../assets/sponsors/microserve_logo.svg'
+import MLH from "../../../assets/sponsors/mlh_logo.png"
+import langaraCollegeTwo from "../../../assets/sponsors/langara_logo.jpg"
 
 interface Sponsor {
     name: string;
@@ -14,7 +18,7 @@ const sponsorsData = {
     current: [
         {
             name: 'Langara College',
-            logo: require("../../../assets/sponsors/langara_logo.jpg"),
+            logo: langaraCollege,
             link: "https://langara.ca/",
             size: 'w-48 h-48',
             row: 1
@@ -27,21 +31,21 @@ const sponsorsData = {
     past: [
         {
             name: 'Microserve',
-            logo: require('../../../assets/sponsors/microserve_logo.svg'),
+            logo: Microserve,
             link: "https://www.microserve.ca/",
             size: 'w-48 h-48',
             row: 1
         },
         {
             name: 'MLH',
-            logo: require("../../../assets/sponsors/mlh_logo.png"),
+            logo: MLH,
             link: "https://mlh.io/",
             size: 'w-48 h-48',
             row: 1
         },
         {
             name: 'Langara College',
-            logo: require("../../../assets/sponsors/langara_logo.jpg"),
+            logo: langaraCollegeTwo,
             link: "https://langara.ca/",
             size: 'w-48 h-48',
             row: 1
@@ -61,9 +65,9 @@ const SponsorDisplay: React.FC = () => {
         });
 
         return Object.keys(rows).map(row => (
-            <div key={row} className="flex justify-center gap-10 space-x-4 mb-4">
+            <div key={row} className="flex justify-center items-center gap-10 space-x-4 mb-4">
                 {rows[parseInt(row)].map(sponsor => (
-                    <div key={sponsor.name} className={sponsor.size}>
+                    <div key={sponsor.name} className="w-fit h-fit">
                         <Link href={sponsor.link} target='_blank'>
                             <Image
                                 src={sponsor.logo}

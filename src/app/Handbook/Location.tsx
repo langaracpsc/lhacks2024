@@ -22,7 +22,7 @@ export default function Location() {
     }, []);
 
     return (
-        <div className={`flex  gap-[12vw] m-[2em] my-0 ${displayCheck ? 'flex-row' : 'flex-col'}`}>
+        <div className={`flex  w-10/12 h-fit justify-between  ${displayCheck ? 'flex-row' : 'flex-col gap-16 justify-center'}`}>
             <div className="flex flex-col items-left">
                 <div>
                     <h2 className="text-3xl font-bold">Location</h2>   
