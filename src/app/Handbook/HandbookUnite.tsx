@@ -1,7 +1,4 @@
-import Schedule from "./Schedule";
-import Location from "./Location";
-import Awards from "./Awards";
-import MiniEvents from "./MiniEvents";
+
 
 import eventIcon1 from './images/event1icon.svg';
 import eventIcon2 from './images/event2icon.svg';
@@ -9,6 +6,8 @@ import eventIcon3 from './images/event3icon.svg';
 import eventIcon4 from './images/event4icon.svg';
 import eventIcon5 from './images/event5icon.svg';
 import eventIcon6 from './images/event6icon.svg';
+
+import Location from './Location';
 
 export default function HandbookUnite() {
     let day1Events: string[][] = [
