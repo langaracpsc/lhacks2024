@@ -75,7 +75,7 @@ export default function Header() {
             <div className={`arrow flex flex-row w-[80%] justify-between self-center mt-[3em] ${displayCheck ? '' : 'hidden'}`}>
                 <div className='flex flex-col justify-left mx-[5em]'>
                     <h4 className='my-[0.2em] text-xl'>Registration Opens</h4>
-                    <p className='text-l my-[0.2em] text-orange-600 text-l'>September 1</p>
+                    <p className='text-l my-[0.2em] text-orange-600 text-l'>June 28</p>
                 </div>
                 <div className='flex flex-col justify-left mx-[5em]'>
                     <h4 className='my-[0.2em] text-xl'>Registration Closed</h4>
