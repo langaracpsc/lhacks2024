@@ -38,17 +38,17 @@ export default function QuestionBox(content: QuestionType) {
 
     return (<>
 
-        <div  >
+        
 
-        <Accordion  type="single" collapsible>
-            <AccordionItem isOpen={arrowColor}   value="item-1" className=" w-56 border rounded-lg max-[453px]:w-32   pr-2">
-                <AccordionTrigger onClick={()=>{setArrowColor(!arrowColor)}} isOpen={arrowColor}   ><p>{content.question}</p></AccordionTrigger>
+        <Accordion   type="single" collapsible>
+            <AccordionItem isOpen={arrowColor}   value="item-1" className=" w-72 border rounded-lg max-[662px]:w-52  max-[504px]:w-40   pr-2 pl-2">
+                <AccordionTrigger onClick={()=>{setArrowColor(!arrowColor)}} isOpen={arrowColor}  ><p className="w-10/12 ">{content.question}</p></AccordionTrigger>
                 <AccordionContent  isOpen={arrowColor}  className="  flex items-center justify-center hover:fill-orange-500">
-                    <p>{content.answer}</p>
+                    <p className=" w-9/12">{content.answer}</p>
                 </AccordionContent>
             </AccordionItem>
         </Accordion>
-        </div>
+      
 
 
 

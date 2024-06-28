@@ -14,7 +14,7 @@ export default function SponsorSection() {
     let content: NameSponsor = { Name: ["Langara", "__", "__", "__", "__", "__"] }
     return (<>
 
-        <div className="flex flex-col border-2 border-orange-500 rounded-lg w-10/12 h-fit justify-center align-center gap-7 pt-8 pr-8 pb-8 pl-8">
+        <div  className="flex flex-col border-2 border-orange-500 rounded-lg w-10/12 h-fit justify-center align-center gap-7 pt-8 pr-8 pb-8 pl-8">
 
             <div className="flex flex-col items-center gap-6">
 
