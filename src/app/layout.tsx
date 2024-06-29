@@ -17,7 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <head> <Script defer data-domain="lhacks.langaracs.ca" src="https://plausible.langaracs.tech/js/script.js" /></head>
+      <head> <Script defer data-domain="lhacks.langaracs.ca" src="https://plausible.langaracs.ca/js/script.js" /></head>
       <body className={inter.className + " bg-black text-white"}>{children}</body>
     </html>
   );
