@@ -21,7 +21,7 @@ export default function AskedQuestions() {
     }
     let contentQuestionColumnTwo: Questions = {
         question: ["Can individuals who are not students at Langara register for the hackathon?","Who is organizing this hackathon?","What if I don't have a team upon registration?"],
-        answer: ["Absolutely! We welcome non-Langara students to participate. However, at least 50% of your team must be current Langara students.","The hackathon is being organized by the Hackathon Task Force in collaboration with the Langara Computer Science Club.","Don't worry! Even if you don't currently have a team, you can still register for the hackathon. We will have team building events in the days leading up to the hackathon! Although a team isn't mandatory, we highly, highly recommend you to form a team of 3 - 4 people!"]
+        answer: ["Absolutely! We welcome non-Langara students to participate. However, at least 50% of your team must be current Langara students.","The hackathon is being organized by the Langara Computer Science Club.","Don't worry! Even if you don't currently have a team, you can still register for the hackathon. We will have team building events in the days leading up to the hackathon! Although a team isn't mandatory, we highly, highly recommend you to form a team of 3 - 4 people!"]
     }
 
  
@@ -43,18 +43,19 @@ export default function AskedQuestions() {
 
 
     return (<>
-        <div className="flex flex-col border-2 border-white-500 rounded-lg w-11/12 h-fit justify-center align-center gap-7 pt-4 pr-4 pb-4 pl-4">
+        <div id="boxOfQuestions" className="flex flex-col border-2 border-white-500 rounded-lg w-11/12 h-fit justify-center align-center gap-7 pt-4 pr-4 pb-4 pl-4">
 
             <div className="flex justify-center items-center">
 
                 <h1 className=" text-5xl max-[854px]:text-4xl max-[565px]:text-xl max-[364px]:text-lg">Frequently Asked Questions</h1>
 
             </div>
-            <div className="flex flex-row  items-baseline justify-center gap-5">
+            <div className="flex flex-row max-[406px]:flex-col max-[406px]:justify-center max-[406px]:items-center items-baseline justify-center gap-5">
 
 
-                <div className="flex flex-col gap-3 w-fit h-max ">
+                <div className="flex flex-col gap-3 w-fit h-max  ">
                     {contentQuestionColumnOne.question.map(((item, index) => (
+
                         <QuestionBox question={contentQuestionColumnOne.question[index]} answer={contentQuestionColumnOne.answer[index]} key={index} />
                     )))}
 
