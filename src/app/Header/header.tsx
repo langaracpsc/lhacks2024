@@ -68,7 +68,7 @@ export default function Header() {
                 <h1 className={`${displayCheck ? 'text-7xl' : 'text-4xl'}`}><span className='text-orange-600'>Langara</span> Hacks 2024</h1>
                 <div className="buttons flex flex-row">
                     <button onClick={()=>{router.push("https://docs.google.com/forms/d/e/1FAIpQLScc94k5CqH31oEn9Zc1WpkDDhlz_sQ9v88ZD40wy6S4ZR51Cw/viewform")}} className={`${displayCheck ? 'text-xl px-[2em]' : 'text-base px-[1em]'} m-[1em] border-2 border-orange-600 py-[0.3em] bg-black bg-opacity-70 rounded-md hover:scale-[1.05] transition-transform duration-300`}>Apply Now</button>
-                    <button onClick={()=>{router.push("https://docs.google.com/forms/d/e/1FAIpQLScc94k5CqH31oEn9Zc1WpkDDhlz_sQ9v88ZD40wy6S4ZR51Cw/viewform")}} className={`${displayCheck ? 'text-xl px-[2em]' : 'text-base px-[1em]'} m-[1em] border-2 border-white py-[0.3em] bg-black bg-opacity-70 rounded-md hover:scale-[1.05] transition-transform duration-300`}>Become a Mentor</button>
+                    <button onClick={()=>{router.push("https://docs.google.com/forms/d/e/1FAIpQLSdGV8ZFfDM96ai8XkMVjAsJ7QSbB9pF2Wos8Z0WqoQDf85YBA/viewform")}} className={`${displayCheck ? 'text-xl px-[2em]' : 'text-base px-[1em]'} m-[1em] border-2 border-white py-[0.3em] bg-black bg-opacity-70 rounded-md hover:scale-[1.05] transition-transform duration-300`}>Become a Mentor</button>
                 </div>
             </div>
 
