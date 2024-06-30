@@ -6,7 +6,9 @@ import eventIcon4 from './images/event4icon.svg';
 import eventIcon5 from './images/event5icon.svg';
 import eventIcon6 from './images/event6icon.svg';
 
-import Location from './Location';
+import Location from './Location'; // prone to the weird casing bug
+
+
 
 export default function HandbookUnite() {
     let day1Events: string[][] = [
