@@ -1,5 +1,5 @@
 import Footer from "./Footer/footer";
-import HandbookPage from "./handbook/HandbookUnite";
+import HandbookPage from "./Handbook/HandbookUnite";
 import Header from "./Header/header";
 import AskedQuestions from "./Main/AskedQuestions";
 import CarouselDisplay from "./Main/CarouselDisplay";
@@ -26,8 +26,6 @@ export default function Home() {
 
         <About/>
       </div>
-
-      
 
       <Footer></Footer>
     </div>
