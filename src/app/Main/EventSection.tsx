@@ -45,9 +45,9 @@ export default function EventSection() {
 
             </div>  */}
 
-            <div className="flex flex-row w-100 mx-20 gap-8 justify-center max-[900px]:flex-col max-[900px]:items-center max-[900px]:gap-8  ">
+            <div className="flex flex-row w-100 max-[900px]:mx-5 mx-20 gap-8 justify-center max-[900px]:flex-col max-[900px]:items-center max-[900px]:gap-8  ">
                 
-                <div className="flex flex-col w-2/3 justify-center items-start gap-4 max-[900px]:w-11/12 h-max">
+                <div className="flex flex-col max-[900px]:w-full w-2/3 justify-center max-[900px]:items-center items-start gap-4 max-[900px]:w-11/12 h-max">
 
                     <h1 className="text-5xl max-[854px]:text-4xl max-[565px]:text-2xl">About Langara Hacks</h1>
                     {/* <div className='w-11/12 border-b-4 border-orange-600'>
@@ -56,7 +56,7 @@ export default function EventSection() {
                     <div className='w-11/12'>
 
                         {/* THIS ALSO NEEDS TO BE REWRITTEN AS WELL */}
-                        <p className=" h-auto text-lg">
+                        <p className=" h-auto text-lg text-justify">
                             Langara Hacks is a two day programming competition that will be held in person at Langara College.
                             A hackathon is a competition where teams of students work together and use their software or hardware skills to build a project in a very short amount of time! This project can be anything from a website, a piece of hardware, a video game, or anything that involves programming. A hackathon is a great way to build connections and to develop your programming skills.
 
