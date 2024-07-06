@@ -84,7 +84,7 @@ const SponsorDisplay: React.FC = () => {
     };
 
     return (
-        <div id="sponsorSection" className="container mx-auto p-4 justify-center text-center">
+        <div className="container mx-auto p-4 justify-center text-center">
 
 
 
