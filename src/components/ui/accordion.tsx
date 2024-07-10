@@ -52,14 +52,14 @@ const AccordionTrigger = React.forwardRef<
     <AccordionPrimitive.Trigger
       ref={ref}
       className={cn(
-        "flex flex-1 items-center justify-center gap-x-2 py-4 font-medium transition-all  text-sm  [&[data-state=open]>svg]:rotate-180 " + (isOpen? "text-pink-500":"text-white" ) ,
+        "flex flex-1 items-center justify-center gap-x-2 py-4 font-medium transition-all  text-sm  [&[data-state=open]>svg]:rotate-180 text-white",
         className
       )}
       {...props}
     >
       {children}
       
-      <ArrowAsComponent classname={"h-4 w-4 shrink-0 transition-transform duration-20 stroke-2  " +  (isOpen? "fill-pink-500":"fill-white" ) }  />
+      <ArrowAsComponent classname={"h-4 w-4 shrink-0 transition-transform duration-20 stroke-2  " +  (isOpen? "fill-orange-500":"fill-white" ) }  />
     </AccordionPrimitive.Trigger>
   </AccordionPrimitive.Header>
 ))
