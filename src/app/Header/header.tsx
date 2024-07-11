@@ -85,7 +85,7 @@ export default function Header() {
                 </div>
                 <div className='flex flex-col justify-left mx-[5em]'>
                     <h4 className='my-[0.2em] text-xl'>Day of the event</h4>
-                    <p className='text-l my-[0.2em] text-orange-600 text-l'>September 28-29</p>
+                    <p className='text-l my-[0.2em] text-orange-600 text-l'>September 21-22</p>
                 </div>
             </div>
             <img className='flex w-[80%] self-center' src='/Group_38.svg' alt="cool arrow below the schedule that represents the passage of time" />
