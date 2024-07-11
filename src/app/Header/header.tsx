@@ -5,8 +5,15 @@ import { useRouter } from 'next/navigation';
 import Link from 'next/link'
 import Image from 'next/image'
 import svggroup from "./Group_38.svg"
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
+    const pathname = usePathname()
+
+
+
+   
+
     const [displayCheck, setDisplayCheck] = useState(true);
     const [isOpen, setIsOpen] = useState(false);
     const toggleNavBar = () => {
@@ -25,6 +32,7 @@ export default function Header() {
                 setDisplayCheck(true);
             }
         };
+    
 
         handleResize();
 
@@ -44,8 +52,23 @@ export default function Header() {
 
     }
 
-   
+    function specialAnimationHandle(whichEnd:string){
+        toggleNavBar()
+        if(pathname == "/"){
+            
+            router.push("#" + whichEnd)
+            router.refresh()
 
+            
+        }else{
+            router.push("#" + whichEnd)
+
+        }
+        
+
+    }
+   
+    
 
     // picture not full screen as it was
     return (<header className={`flex flex-col items-center w-full h-[50vw] ${displayCheck ? 'bg-[url("/headerBackground2.jpg")] bg-center bg-no-repeat bg-cover' : ''}`}>
@@ -56,10 +79,10 @@ export default function Header() {
                     <button onClick={redirectAboutUs} className={`mr-[1em] hover:text-orange-600 font-bold text-left ${isOpen ? 'font-normal mr-0 my-[0.5em] border-b-[1px] border-solid border-white text-4xl' : 'text-lg'}`}>About Us</button>
                     <button onClick={redirectHandbook} className={`mr-[1em] hover:text-orange-600 font-bold text-left ${isOpen ? 'font-normal mr-0 my-[0.5em] border-b-[1px] border-solid border-white text-4xl' : 'text-lg'}`}>Handbook</button>
                 </div>
-
+                    
                 <div className={`links mr-[4em] ${displayCheck || isOpen ? '' : 'hidden'} ${isOpen ? 'flex flex-col mr-0 ml-0 ml-[10vw] w-[100%]' : ''}`}>
-                    <button onClick={()=>{router.push("/#sponsor")}}  className={`ml-[1em] text-orange-600 hover:text-white text-left ${isOpen ? 'ml-0 my-[0.5em] border-b-[1px] border-solid border-orange-600 text-2xl' : 'text-lg'}`}>Sponsors</button>
-                    <button onClick={()=>{router.push("/#box")}} className={`ml-[1em] text-orange-600 hover:text-white text-left ${isOpen ? 'ml-0 my-[0.5em] border-b-[1px] border-solid border-orange-600 text-2xl' : 'text-lg'}`}>FAQ</button>
+                    <button onClick={()=>{specialAnimationHandle("sponsorquestion")}}  className={`ml-[1em] text-orange-600 hover:text-white text-left ${isOpen ? 'ml-0 my-[0.5em] border-b-[1px] border-solid border-orange-600 text-2xl' : 'text-lg'}`}>Sponsors</button>
+                    <button onClick={()=>{specialAnimationHandle("boxquestion");}} className={`ml-[1em] text-orange-600 hover:text-white text-left ${isOpen ? 'ml-0 my-[0.5em] border-b-[1px] border-solid border-orange-600 text-2xl' : 'text-lg'}`}>FAQ</button>
                 </div>
                 <div className={`absolute right-[0.7em] top-[0.7em] ${displayCheck ? 'hidden' : ''}`}>
                     <Hamburger direction="left" onToggle={toggleNavBar}></Hamburger>

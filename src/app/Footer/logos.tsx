@@ -27,7 +27,7 @@ export default function ExecMiniProfiles() {
         ["Saemi Park", "Vice President Internal", "/images/square/saemi.jpg"],
         ["Tyler Qiu", "Logistics Coordinator", "/images/square/tyler.jpg"],
     ];
-
+    
 
 
     const [displayCheck, setDisplayCheck] = useState(true);
