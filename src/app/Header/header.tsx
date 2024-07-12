@@ -80,11 +80,12 @@ export default function Header() {
                 </div>
                     
                 <div className={`links mr-[4em] ${displayCheck || isOpen ? '' : 'hidden'} ${isOpen ? 'flex flex-col mr-0 ml-0 ml-[10vw] w-[100%]' : ''}`}>
-                    <button onClick={()=>{router.push("/#sponsorquestion")}}  className={`ml-[1em] text-orange-600 hover:text-white text-left ${isOpen ? 'ml-0 my-[0.5em] border-b-[1px] border-solid border-orange-600 text-2xl' : 'text-lg'}`}>Sponsors</button>
+                    <button onClick={()=>{router.push("/#sponsorquestion"); toggleNavBar()}}  className={`ml-[1em] text-orange-600 hover:text-white text-left ${isOpen ? 'ml-0 my-[0.5em] border-b-[1px] border-solid border-orange-600 text-2xl' : 'text-lg'}`}>Sponsors</button>
+
                     <button onClick={()=>{router.push("/#boxquestion")}} className={`ml-[1em] text-orange-600 hover:text-white text-left ${isOpen ? 'ml-0 my-[0.5em] border-b-[1px] border-solid border-orange-600 text-2xl' : 'text-lg'}`}>FAQ</button>
                 </div>
                 <div className={`absolute right-[0.7em] top-[0.7em] ${displayCheck ? 'hidden' : ''}`}>
-                    <Hamburger direction="left" onToggle={toggleNavBar}></Hamburger>
+                    <Hamburger direction="left" toggled={isOpen} onToggle={toggleNavBar}></Hamburger>
                 </div>
             </div>
             <div className={`central part flex flex-col w-full  ${displayCheck ? 'mt-[14em]' : 'mt-[8em]'} items-center`}>
