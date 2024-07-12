@@ -89,7 +89,7 @@ export default function Header() {
                 </div>
             </div>
             <div className={`central part flex flex-col w-full  ${displayCheck ? 'mt-[14em]' : 'mt-[8em]'} items-center`}>
-                <h3 className={`${displayCheck ? 'text-xl' : 'text-base'}`}>September 21 - 22 Langara College</h3>
+                <h3 className={`${displayCheck ? 'text-xl' : 'text-base'}`}>September 28-29 Langara College</h3>
                 <h1 className={`${displayCheck ? 'text-7xl' : 'text-4xl'}`}><span className='text-orange-600'>Langara</span> Hacks 2024</h1>
                 <div className="buttons flex flex-row">
                     <button onClick={()=>{router.push("https://docs.google.com/forms/d/e/1FAIpQLScc94k5CqH31oEn9Zc1WpkDDhlz_sQ9v88ZD40wy6S4ZR51Cw/viewform")}} className={`${displayCheck ? 'text-xl px-[2em]' : 'text-base px-[1em]'} m-[1em] border-2 border-orange-600 py-[0.3em] bg-black bg-opacity-70 rounded-md hover:scale-[1.05] transition-transform duration-300`}>Apply Now</button>
