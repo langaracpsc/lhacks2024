@@ -53,12 +53,12 @@ export default function Home() {
 
         <HandbookPage/>
 
-        <span id="boxquestion" className="mb-10"></span>
+        {/* <span id="boxquestion" className="mb-10"></span> */}
         <AskedQuestions/>
 
         <Events />
 
-        <span id="sponsorquestion"  className="mb-10"></span>
+        {/* <span id="sponsorquestion"  className="mb-10"></span> */}
         <SponsorDisplay/>
 
 

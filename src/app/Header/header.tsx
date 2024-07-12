@@ -17,6 +17,8 @@ export default function Header() {
 
     // Function to toggle the hamburger menu
     const toggleNavBar = () => {
+        if (displayCheck)
+            return
         setIsOpen(!isOpen);
     };
 
