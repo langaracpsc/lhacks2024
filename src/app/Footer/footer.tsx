@@ -8,6 +8,7 @@ export default function Footer(){
         <SponsorsLogosFooter></SponsorsLogosFooter>
         <div className="w-100 h-10 m-10">
             <p>Made with love by the <a href="https://www.langaracs.ca/">Langara Computer Science Club</a>.</p>
+            <p>©Copyright LCSC 2024</p>
         </div>
             
         </footer>

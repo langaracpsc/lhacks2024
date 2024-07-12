@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Langara Hacks! 2024",
-  description: "Website for Langara Hacks! 2024",
+  description: "Langara Hacks is a two day programming competition targeted towards beginners held in person at Langara College!",
 };
 
 export default function RootLayout({

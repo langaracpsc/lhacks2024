@@ -4,7 +4,7 @@ import imgTwo from "../../../assets/images/group2.jpg"
 
 export default function Events() {
   return (
-    <div className="flex flex-row items-baseline justify-center gap-8 p-14  max-[900px]:flex-col max-[900px]:items-center">
+    <div className="flex flex-row items-baseline justify-center gap-8 w-11/12 pl-3 max-[900px]:flex-col max-[900px]:items-center">
       <div className="flex flex-col w-1/3 justify-between items-baseline h-max gap-6 max-[900px]:items-center max-[900px]:justify-center  max-[900px]:w-2/3">
         <h1 className="text-6xl max-[1088px]:text-4xl max-[716px]:text-3xl ">EVENTS</h1>
           <div className="flex flex-col gap-4 w-11/12">
@@ -18,28 +18,28 @@ export default function Events() {
           <h2 className="text-2xl ">MEET UP. CREATE TOGETHER.</h2>
         </div>
         <div className="p-4 w-11/12 bg-zinc-800 rounded-md">
-          <h2>Tech Talk: Why Java sucks.</h2>
-          <p>24th February, 2024; 6:00 PM, Langara Campus</p>
+          <h2>Workshops to be decided.</h2>
+          <p>Date - TBD</p>
         </div>
         <div className="p-4 w-11/12 bg-zinc-800 rounded-md">
-          <h2>Tech Talk: Why Java sucks.</h2>
-          <p>24th February, 2024; 6:00 PM, Langara Campus</p>
+          <h2>Workshops to be decided.</h2>
+          <p>Date - TBD</p>
         </div>
         <div className="p-4 w-11/12 bg-zinc-800 rounded-md">
-          <h2>Tech Talk: Why Java sucks.</h2>
-          <p>24th February, 2024; 6:00 PM, Langara Campus</p>
+          <h2>Workshops to be decided.</h2>
+          <p>Date - TBD</p>
         </div>
         <div className="p-4 w-11/12 bg-zinc-800 rounded-md">
-          <h2>Tech Talk: Why Java sucks.</h2>
-          <p>24th February, 2024; 6:00 PM, Langara Campus</p>
+          <h2>Workshops to be decided.</h2>
+          <p>Date - TBD</p>
         </div>
         <div className="p-4 w-11/12 bg-zinc-800 rounded-md">
-          <h2>Tech Talk: Why Java sucks.</h2>
-          <p>24th February, 2024; 6:00 PM, Langara Campus</p>
+          <h2>Workshops to be decided.</h2>
+          <p>Date - TBD</p>
         </div>
         <div className="p-4 w-11/12 bg-zinc-800 rounded-md">
-          <h2>Tech Talk: Why Java sucks.</h2>
-          <p>24th February, 2024; 6:00 PM, Langara Campus</p>
+          <h2>Workshops to be decided.</h2>
+          <p>Date - TBD</p>
         </div>
       </div>
     </div>

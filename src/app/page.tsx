@@ -8,8 +8,9 @@ import CarouselDisplay from "./Main/CarouselDisplay";
 import EventSection from "./Main/EventSection";
 import SponsorDisplay from "./Main/SponsorDisplay";
 import SponsorSection from "./Main/SponsorSection";
-import About from "./aboutus/about";
+import About from "./schedule/about";
 import { useParams } from 'next/navigation' ;
+import Events from "./schedule/events";
 
 export default function Home() {
   const params = useParams()
@@ -37,17 +38,26 @@ export default function Home() {
   return (
     <div className="flex flex-col gap-20 overflow-x-clip">
       <Header/>
-      <div className="flex flex-col justify-center gap-32 items-center">
-        <EventSection/>
+      <div className="flex flex-col justify-center   gap-16 items-center">
 
-        <span id="sponsorquestion"></span>
-        <SponsorDisplay/>
-        
         <CarouselDisplay/>
 
-        <HandbookPage/>
-        <span id="boxquestion" ></span>
+        <EventSection/>
+
+      
+        
+        <span id="boxquestion" className=" absolute"></span>
         <AskedQuestions/>
+
+        <HandbookPage/>
+
+        <Events />
+
+        <span id="sponsorquestion" className=" absolute"></span>
+        <SponsorDisplay/>
+
+
+        
    
 
         <About/>
