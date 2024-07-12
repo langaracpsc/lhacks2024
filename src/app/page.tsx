@@ -46,14 +46,16 @@ export default function Home() {
 
       
         
-        <span id="boxquestion" className=" absolute"></span>
-        <AskedQuestions/>
+      
 
         <HandbookPage/>
 
+        <span id="boxquestion" className="mb-10"></span>
+        <AskedQuestions/>
+
         <Events />
 
-        <span id="sponsorquestion" className=" absolute"></span>
+        <span id="sponsorquestion"  className="mb-10"></span>
         <SponsorDisplay/>
 
 
