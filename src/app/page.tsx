@@ -37,9 +37,9 @@ export default function Home() {
 
     
   return (
-    <div className="flex flex-col gap-20 overflow-x-clip">
+    <div className="flex flex-col gap-20 overflow-x-clip ">
       <Header/>
-      <div className="flex flex-col justify-center   gap-16 items-center">
+      <div className="flex flex-col justify-center gap-16 items-center scroll-smooth">
 
         <HeroImage/>
 
