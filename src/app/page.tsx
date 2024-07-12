@@ -11,6 +11,7 @@ import SponsorSection from "./Main/SponsorSection";
 import About from "./schedule/about";
 import { useParams } from 'next/navigation' ;
 import Events from "./schedule/events";
+import HeroImage from "./HeroImage/HeroImage";
 
 export default function Home() {
   const params = useParams()
@@ -39,6 +40,8 @@ export default function Home() {
     <div className="flex flex-col gap-20 overflow-x-clip">
       <Header/>
       <div className="flex flex-col justify-center   gap-16 items-center">
+
+        <HeroImage/>
 
         <CarouselDisplay/>
 
