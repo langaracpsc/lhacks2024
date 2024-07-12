@@ -84,7 +84,7 @@ const SponsorDisplay: React.FC = () => {
     };
 
     return (
-        <div className="container mx-auto p-4 justify-center text-center">
+        <div className="flex flex-col gap-10 mx-auto pl-4 pr-4 justify-center items-center">
 
 
 
@@ -92,7 +92,7 @@ const SponsorDisplay: React.FC = () => {
             {/* <h2 className="text-2xl font-bold mb-4 text-center">Sponsors</h2>
             {renderSponsors(sponsorsData.current)} */}
 
-            <h2 className="text-2xl font-bold mt-8 mb-4 text-center">Past Sponsors</h2>
+            <h2 className="text-2xl font-bold ">Past Sponsors</h2>
             {renderSponsors(sponsorsData.past)}
 
             <div className="flex justify-center items-center h-full">
