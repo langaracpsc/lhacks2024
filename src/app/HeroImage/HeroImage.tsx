@@ -28,7 +28,8 @@ export default function HeroImage() {
     
 
     return (
-        <div className={`flex flex-col items-center w-full h-[50vw] ${displayCheck ? 'bg-[url("/headerBackground2.jpg")] bg-center bg-no-repeat bg-cover' : ''}`}>
+        // <div className={`flex flex-col items-center w-full h-[50vw] ${displayCheck ? 'bg-[url("/headerBackground2.jpg")] bg-center bg-no-repeat bg-cover' : ''}`}></div>
+        <div className={`flex flex-col items-center w-full h-[50vw] ${true ? 'bg-[url("/headerBackground2.jpg")] bg-center bg-no-repeat bg-cover' : ''}`}>
             <div className="w-full h-full flex flex-col justify-center box-border bg-gradient-to-b from-transparent to-black to-75%">
                 <div className={`central part flex flex-col w-full ${displayCheck ? 'mt-[14em]' : 'mt-[8em]'} items-center`}>
                     <h3 className={`${displayCheck ? 'text-xl' : 'text-base'}`}>September 21-22 Langara College</h3>
