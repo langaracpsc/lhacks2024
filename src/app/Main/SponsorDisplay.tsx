@@ -84,7 +84,7 @@ const SponsorDisplay: React.FC = () => {
     };
 
     return (
-        <div id="sponsors" className="flex flex-col gap-10 mx-auto pl-4 pr-4 justify-center items-center">
+        <div className="flex flex-col gap-10 mx-auto pl-4 pr-4 justify-center items-center">
 
 
 

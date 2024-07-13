@@ -37,7 +37,7 @@ export default function Home() {
 
     
   return (
-    <div className="flex flex-col gap-20 overflow-x-clip ">
+    <div className="flex flex-col gap-20 overflow-x-clip scroll-pt-80">
       <Header/>
       <div className="flex flex-col justify-center gap-16 items-center scroll-smooth">
 
@@ -47,18 +47,20 @@ export default function Home() {
 
         <EventSection/>
 
-      
-        
-      
-
         <HandbookPage/>
+        {/* 
+        The header is 20px tall
+        the -16 margin removes the space created by the 16px gap
+        2em + 1.75 rem SHOULD be the height of the header
 
-        {/* <span id="boxquestion" className="mb-10"></span> */}
+        it still doesn't line up perfectly but it is good enough
+         */}
+        <span id="faq" className="-mt-32 pt-[2em] pb-[1.75rem]"></span>
         <AskedQuestions/>
 
         <Events />
 
-        {/* <span id="sponsorquestion"  className="mb-10"></span> */}
+        <span id="sponsors" className="-mt-32 pt-[2em] pb-[1.75rem]"></span>
         <SponsorDisplay/>
 
 

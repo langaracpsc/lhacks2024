@@ -46,7 +46,7 @@ export default function AskedQuestions() {
     return (
         <>
        
-        <div id="faq"  className="flex flex-col   w-11/12 h-fit justify-center align-center gap-7 pt-4 pr-4 pb-4 pl-4">
+        <div className="flex flex-col   w-11/12 h-fit justify-center align-center gap-7">
 
             <div className="flex justify-center items-center">
 

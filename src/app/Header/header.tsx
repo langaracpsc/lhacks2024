@@ -52,11 +52,11 @@ export default function Header() {
     
 
     return (
-        <div className={`z-30 upperHeader flex w-full flex-row ${displayCheck ? 'p-[2em] justify-between' : 'p-[2em]'} bg-black bg-opacity-90 fixed top-0 left-0 ${isOpen ? 'flex-col h-full justify-center' : ''}`}>
-            <div className={`buttons ml-[2em] ${displayCheck || isOpen ? '' : 'hidden'} ${isOpen ? 'flex flex-col ml-0 ml-[10vw] w-[100%]' : ''}`}>
+        <div className={`z-30 upperHeader flex w-full flex-row p-[2em] bg-black bg-opacity-90 fixed top-0 left-0 ${displayCheck ? 'justify-between' : ''}  ${isOpen ? 'flex-col h-full justify-center' : ''}`}>
+            <div className={`buttons ml-[2em] ${displayCheck || isOpen ? '' : 'hidden'} ${isOpen ? 'flex flex-col ml-0 w-[100%]' : ''}`}>
                 <button onClick={redirectMain} className={`mr-[1em] hover:text-orange-600 font-bold text-left ${isOpen ? 'font-normal mr-0 my-[0.5em] border-b-[1px] border-solid border-white text-4xl' : 'text-lg'}`}>Home</button>
             </div>
-            <div className={`links mr-[4em] ${displayCheck || isOpen ? '' : 'hidden'} ${isOpen ? 'flex flex-col mr-0 ml-0 ml-[10vw] w-[100%]' : ''}`}>
+            <div className={`links mr-[4em] ${displayCheck || isOpen ? '' : 'hidden'} ${isOpen ? 'flex flex-col mr-0 ml-0 w-[100%]' : ''}`}>
                 <button onClick={() => { specialAnimationHandle('sponsors'); }} className={`ml-[1em] text-orange-600 hover:text-white text-left ${isOpen ? 'ml-0 my-[0.5em] border-b-[1px] border-solid border-orange-600 text-2xl' : 'text-lg'}`}>Sponsors</button>
                 <button onClick={() => { specialAnimationHandle('faq'); }} className={`ml-[1em] text-orange-600 hover:text-white text-left ${isOpen ? 'ml-0 my-[0.5em] border-b-[1px] border-solid border-orange-600 text-2xl' : 'text-lg'}`}>FAQ</button>
             </div>
