@@ -41,7 +41,7 @@ export default function About() {
             Just because we are a transfer college doesn&apos;t mean that our opportunities
             should be limited. 
             
-            This hackathon is an opportunity for you to learn, grow, and to create a project that's worth so much more than just a grade.
+            This hackathon is an opportunity for you to learn, grow, and to create a project that&apos;s worth so much more than just a grade.
           </p>
           <br />
 
