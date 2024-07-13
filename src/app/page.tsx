@@ -12,6 +12,7 @@ import About from "./schedule/about";
 import { useParams } from 'next/navigation' ;
 import Events from "./schedule/events";
 import HeroImage from "./HeroImage/HeroImage";
+import SponsorsLogosFooter from "./Footer/logos";
 
 export default function Home() {
   const params = useParams()
@@ -65,12 +66,13 @@ export default function Home() {
         <span id="faq" className="-mt-32 pt-[2em] pb-[1.75rem]"></span>
         <AskedQuestions/>
         
-   
 
         <About/>
-      </div>
 
-      <Footer></Footer>
+        <SponsorsLogosFooter></SponsorsLogosFooter>
+
+        <Footer></Footer>
+      </div>
     </div>
   );
 }
