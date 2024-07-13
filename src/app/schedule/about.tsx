@@ -3,7 +3,7 @@ import aboutImage from "../../../assets/images/group2023.jpg"
 
 export default function About() {
   return (
-    <div className="flex flex-row items-baseline justify-center gap-8 p-14  max-[900px]:flex-col max-[900px]:items-center ">
+    <div className="flex flex-row items-baseline justify-center gap-8 px-14  max-[900px]:flex-col max-[900px]:items-center ">
       <div className="flex flex-col w-1/3 justify-start items-baseline h-96 gap-6 max-[900px]:h-fit max-[900px]:items-center max-[900px]:justify-center  max-[900px]:w-2/3">
         <h1 className="text-6xl max-[1088px]:text-4xl max-[716px]:text-3xl w-max ">ABOUT US</h1>
         <Image src={aboutImage} className="w-[10em=] rounded-md max-[900px]:w-[20em=]" alt="aboutUsPhoto" />
@@ -16,7 +16,7 @@ export default function About() {
         <div className='w-11/12'>
 
           {/* THIS ALSO NEEDS TO BE REWRITTEN AS WELL */}
-          <p className=" w-12/12 h-auto break-words text-lg max-w-prose text-justify">
+          <p className=" w-12/12 h-auto break-words text-lg max-w-prose">
             The Langara Computer Science Club is a
             student-run club dedicated to providing a space for students
             interested in computer science at Langara to learn, network, and to help each
