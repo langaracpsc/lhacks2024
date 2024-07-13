@@ -54,7 +54,7 @@ export default function HeroImage() {
                         <p className='text-l my-[0.2em] text-orange-600 text-l'>September 21-22</p>
                     </div>
                 </div>
-                <Image src={svggroup} alt={'cool arrow below the schedule that represents the passage of time'} className='flex w-[80%] self-center'></Image>
+                <Image src={svggroup} alt={'cool arrow below the schedule that represents the passage of time'} className={`flex w-[80%] self-center ${displayCheck ? '' : 'hidden'}`}></Image>
             </div>
         </div>
     );
