@@ -10,32 +10,48 @@ interface Question {
 export default function AskedQuestions() {
     const contentQuestionColumnOne: Question[] = [
         {
-            question: "What should I do if I lack coding experience?",
-            answer: "No worries! Workshops will prepare you. Contribute in various ways and learn from the experience!",
+            question: "What should I do if I don't have coding experience?",
+            answer: "Don't worry! We will have pre-hackathon workshops in the week leading up to the hackathon to teach you some basic software development skills. Stay tuned for more information!",
         },
         {
             question: "Are students from other disciplines allowed to participate?",
-            answer: "Yes! We welcome all backgrounds. Contribute your expertise in project presentation, design, or conceptualization.",
+            answer: "Yes! Students from all backgrounds are welcome. There are many other ways that you can contribute such as project presentation, design, or conceptualization.",
         },
         {
             question: "Do I need to bring my own food?",
-            answer: "Lunch and dinner will be provided. Inform us of dietary restrictions when you register. You can also bring your own food or snacks.",
+            answer: "We will be providing meals for both days! Please make sure to inform us of dietary restrictions when you register. You are welcome to bring your own food or snacks.",
+        },
+        {
+            question: "What are the prizes?",
+            answer: "Prizes will be announced soon™!",
+        },
+        {
+            question: "What should I bring?",
+            answer: "Bring everything and anything you need to stay motivated over the 30 hours of hacking! We reccomend your laptop and charger, chargers for your peripherals, a reusable water bottle, and extra snacks if you need them. We'll provide everything else!"
         },
     ];
 
     const contentQuestionColumnTwo: Question[] = [
         {
             question: "Can non-Langara students register?",
-            answer: "Yes! Non-Langara students can join, but at least 50% of your team must be current Langara students.",
+            answer: "Yes! Non-Langara students are welcome to register, but at least 50% of your team must be current Langara students. We will have a team-building channel in our hackathon discord.",
         },
         {
             question: "Who is organizing this hackathon?",
-            answer: "The hackathon is being organized by the Langara Computer Science Club.",
+            answer: "The hackathon is being organized by the Langara Computer Science Club!",
         },
         {
             question: "What if I don't have a team upon registration?",
-            answer: "No problem! Register solo and join team-building events before the hackathon. We recommend forming a team of 3-4 people.",
+            answer: "No problem! We will have tons of team-building opportunities before the hackathon begins.",
         },
+        {
+            question: "Do I have to join a team?",
+            answer: "No, but we highly reccomend forming a team of three to four people. Forming a team is a vital part of the hackathon experience and you will be missing out if you compete by yourself."
+        },
+        {
+            question: "I still have a question!",
+            answer: "Feel free to reach out to us at langaracompsciclub@gmail.com ."
+        }
     ];
 
     return (
