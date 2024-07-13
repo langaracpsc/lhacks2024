@@ -41,13 +41,13 @@ export default function Home() {
       <Header/>
       <div className="flex flex-col justify-center gap-16 items-center scroll-smooth">
 
+      <span id="top" className="-mt-32 pt-[2em] pb-[1.75rem]"></span>
         <HeroImage/>
-
-        <CarouselDisplay/>
 
         <EventSection/>
 
-        <HandbookPage/>
+        <CarouselDisplay/>
+
         {/* 
         The header is 20px tall
         the -16 margin removes the space created by the 16px gap
@@ -55,15 +55,15 @@ export default function Home() {
 
         it still doesn't line up perfectly but it is good enough
          */}
-        <span id="faq" className="-mt-32 pt-[2em] pb-[1.75rem]"></span>
-        <AskedQuestions/>
-
-        <Events />
-
         <span id="sponsors" className="-mt-32 pt-[2em] pb-[1.75rem]"></span>
         <SponsorDisplay/>
 
+        <Events />
 
+        <HandbookPage/>
+        
+        <span id="faq" className="-mt-32 pt-[2em] pb-[1.75rem]"></span>
+        <AskedQuestions/>
         
    
 
