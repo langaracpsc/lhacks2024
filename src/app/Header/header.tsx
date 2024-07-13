@@ -52,7 +52,7 @@ export default function Header() {
     
 
     return (
-        <div className={`z-30 upperHeader flex w-full flex-row p-[2em] bg-black bg-opacity-90 fixed top-0 left-0 ${displayCheck ? 'justify-between' : ''}  ${isOpen ? 'flex-col h-full justify-center' : ''}`}>
+        <div className={`z-30 upperHeader flex w-full flex-row p-[2em] fixed top-0 left-0 bg-black bg-opacity-30 ${displayCheck ? 'justify-between bg-gradient-to-b from-black from:10% to-transparent' : 'bg-gradient-to-b from-black to-transparent'}  ${isOpen ? 'flex-col h-full justify-center' : ''}`}>
             <div className={`buttons ml-[2em] ${displayCheck || isOpen ? '' : 'hidden'} ${isOpen ? 'flex flex-col ml-0 w-[100%]' : ''}`}>
                 <button onClick={redirectMain} className={`mr-[1em] hover:text-orange-600 font-bold text-left ${isOpen ? 'font-normal mr-0 my-[0.5em] border-b-[1px] border-solid border-white text-4xl' : 'text-lg'}`}>Home</button>
             </div>
