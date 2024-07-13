@@ -56,10 +56,16 @@ export default function EventSection() {
                     <div className='w-11/12'>
 
                         {/* THIS ALSO NEEDS TO BE REWRITTEN AS WELL */}
-                        <p className=" h-auto text-lg text-justify">
-                            Langara Hacks is a two day programming competition that will be held in person at Langara College.
-                            A hackathon is a competition where teams of students work together and use their software or hardware skills to build a project in a very short amount of time! This project can be anything from a website, a piece of hardware, a video game, or anything that involves programming. A hackathon is a great way to build connections and to develop your programming skills.
-
+                        <p className="h-auto text-lg">
+                            Langara Hacks is a two day event that will be held in person at Langara College!
+                        </p>
+                        <br></br>
+                        <p className="h-auto text-lg">
+                            A <a href="https://en.wikipedia.org/wiki/Hackathon" target="_blank" className="text-orange-500">hackathon</a> is a programming competition where teams of students work together and use their software or hardware skills to build a project in a very short amount of time! This project can be anything from a website, a piece of hardware, a video game, or anything that involves programming. 
+                        </p>
+                        <br></br>
+                        <p className="h-auto text-lg">
+                            A hackathon is a great way to build connections and to develop your programming skills.
                         </p>
                     </div>
                 </div>
