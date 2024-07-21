@@ -49,6 +49,10 @@ export default function AskedQuestions() {
             answer: "No, but we highly reccomend forming a team of three to four people. Forming a team is a vital part of the hackathon experience and you will be missing out if you compete by yourself."
         },
         {
+            question: "How big can a team be?",
+            answer: "A team can have anywhere between one to four people."
+        },
+        {
             question: "I still have a question!",
             answer: "Feel free to reach out to us at langaracompsciclub@gmail.com ."
         }
