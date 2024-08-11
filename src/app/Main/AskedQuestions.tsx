@@ -34,7 +34,7 @@ export default function AskedQuestions() {
     const contentQuestionColumnTwo: Question[] = [
         {
             question: "Can non-Langara students register?",
-            answer: "Yes! Non-Langara students are welcome to register, but at least 50% of your team must be current Langara students. We will have a team-building channel in our hackathon discord.",
+            answer: "Yes! Non-Langara students are welcome to register.",
         },
         {
             question: "Who is organizing this hackathon?",
@@ -57,6 +57,15 @@ export default function AskedQuestions() {
             answer: "Feel free to reach out to us at langaracompsciclub@gmail.com ."
         }
     ];
+    
+    // useEffect(()=>{
+
+    //     sethalfOne(contentQuestions)
+    //     sethalfArrayQone(true)
+
+
+    // },[])
+
 
     return (
         <>
