@@ -11,6 +11,8 @@ import SponsorSection from "./Main/SponsorSection";
 import About from "./schedule/about";
 import { useParams } from 'next/navigation' ;
 import Events from "./schedule/events";
+import HeroImage from "./HeroImage/HeroImage";
+import SponsorsLogosFooter from "./Footer/logos";
 
 export default function Home() {
   const params = useParams()
@@ -36,36 +38,41 @@ export default function Home() {
 
     
   return (
-    <div className="flex flex-col gap-20 overflow-x-clip">
+    <div className="flex flex-col gap-20 overflow-x-clip scroll-pt-80">
       <Header/>
-      <div className="flex flex-col justify-center   gap-16 items-center">
+      <div className="flex flex-col justify-center gap-16 items-center scroll-smooth">
 
-        <CarouselDisplay/>
+      <span id="top" className="-mt-32 pt-[2em] pb-[1.75rem]"></span>
+        <HeroImage/>
 
         <EventSection/>
 
-      
-        
-      
+        <CarouselDisplay/>
 
-        <HandbookPage/>
+        {/* 
+        The header is 20px tall
+        the -16 margin removes the space created by the 16px gap
+        2em + 1.75 rem SHOULD be the height of the header
 
-        <span id="boxquestion" className="mb-10"></span>
-        <AskedQuestions/>
+        it still doesn't line up perfectly but it is good enough
+         */}
+        <span id="sponsors" className="-mt-32 pt-[2em] pb-[1.75rem]"></span>
+        <SponsorDisplay/>
 
         <Events />
 
-        <span id="sponsorquestion"  className="mb-10"></span>
-        <SponsorDisplay/>
-
-
+        <HandbookPage/>
         
-   
+        <span id="faq" className="-mt-32 pt-[2em] pb-[1.75rem]"></span>
+        <AskedQuestions/>
+        
 
         <About/>
-      </div>
 
-      <Footer></Footer>
+        <SponsorsLogosFooter></SponsorsLogosFooter>
+
+        <Footer></Footer>
+      </div>
     </div>
   );
 }

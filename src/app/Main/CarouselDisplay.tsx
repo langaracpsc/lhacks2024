@@ -47,7 +47,7 @@ export default function CarouselDisplay() {
             <div className="flex flex-col items-center gap-2">
                 <h1 className="text-3xl">Memories from 2023</h1>
 
-                <p className="text-xl text-orange-500 max-[418px]:text-sm"> 132 participants &#x2022; 19 projects &#x2022; 6 organizations</p>
+                <p className="text-xl text-orange-500 max-[418px]:text-sm"> 132 participants &#x2022; 19 projects &#x2022; 6 sponsors</p>
 
 
             </div>

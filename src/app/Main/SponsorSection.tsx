@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button"
 
 
 interface NameSponsor {
-
     Name: string[]
 }
 

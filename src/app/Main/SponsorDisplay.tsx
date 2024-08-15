@@ -96,10 +96,13 @@ const SponsorDisplay: React.FC = () => {
             {renderSponsors(sponsorsData.past)}
 
             <div className="flex justify-center items-center h-full">
-                <a href="mailto:langaracompsciclub@gmail.com" className="text-base px-[1em] m-[1em] border-2 border-orange-600 py-[0.3em] bg-black bg-opacity-70 rounded-md hover:scale-[1.05] transition-transform duration-300">
-                    Interested in sponsoring? Reach out!
+                <a href="mailto:langaracompsciclub@gmail.com" className="text-base px-[1em] m-[1em] border-2 border-orange-600 py-[0.3em] bg-black bg-opacity-70 rounded-md hover:scale-[1.05] transition-transform duration-300 justify-center text-center">
+                    <span>
+                        Interested in sponsoring? <wbr></wbr>Reach&nbsp;out!
+                    </span>
                 </a>
             </div>
+
 
 
         </div>
