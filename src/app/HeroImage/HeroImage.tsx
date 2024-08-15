@@ -47,7 +47,7 @@ export default function HeroImage() {
                     </div>
                     <div className='flex flex-col justify-left mx-[5em]'>
                         <h4 className='my-[0.2em] text-xl'>Registration Closed</h4>
-                        <p className='text-l my-[0.2em] text-orange-600 text-l'>September 15</p>
+                        <p className='text-l my-[0.2em] text-orange-600 text-l'>August 30</p>
                     </div>
                     <div className='flex flex-col justify-left mx-[5em]'>
                         <h4 className='my-[0.2em] text-xl'>Day of the event</h4>
