@@ -44,8 +44,8 @@ const sponsorsData = {
             name: 'Defang',
             logo: Defang,
             link: "https://defang.io/",
-            size: 'w-48 h-48',
-            row: 1
+            size: 'w-64 h-64',
+            row: 0
         },
         {
             name: 'Langara Information Technology',
@@ -109,10 +109,11 @@ const SponsorDisplay: React.FC = () => {
             rows[sponsor.row].push(sponsor);
         });
 
+
         return Object.keys(rows).map(row => (
             <div key={row} className="flex flex-wrap justify-center items-center gap-10 max-[742px]:w-6/12 ">
                 {rows[parseInt(row)].map(sponsor => (
-                    <div key={sponsor.name} className={` flex  justify-center items-center w-[200px] h-[200px]`}>
+                    <div key={sponsor.name} className={` flex  justify-center items-center "w-[200px] h-[200px]`}>
                         
                             <Image
                             onClick={()=>{router.push(sponsor.link)}} 
@@ -122,7 +123,8 @@ const SponsorDisplay: React.FC = () => {
                                 alt={`${sponsor.name} logo`}
 
                                 className={`w-max h-max fill-white  `}
-                                
+                                height={sponsor.name == "Defang" ? 400 : 200} 
+                                width={sponsor.name == "Defang" ? 400 : 200} 
                             />
                      
 
