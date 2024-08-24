@@ -12,7 +12,7 @@ export default function Footer(){
                 <br></br>
             </div>
 
-            <a href="https://www.ikea.com/ca/en/p/blahaj-soft-toy-shark-90373590/" target='_blank' className='w-[4em] ml-[90vw] absolute pb-10'><Image src={blahaj} alt={'ikea shark'}></Image></a>
+            <a href="https://findblahaj.langaracs.ca/" target='_blank' className='w-[4em] ml-[90vw] absolute pb-10'><Image src={blahaj} alt={'ikea shark'}></Image></a>
 
 
 
