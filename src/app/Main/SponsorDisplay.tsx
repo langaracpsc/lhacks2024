@@ -111,7 +111,7 @@ const SponsorDisplay: React.FC = () => {
 
 
         return Object.keys(rows).map(row => (
-            <div key={row} className="flex flex-wrap justify-center items-center gap-10 max-[742px]:w-6/12 ">
+            <div key={row} className="flex flex-wrap justify-center items-center gap-10 max-[690px]:w-6/12 ">
                 {rows[parseInt(row)].map(sponsor => (
                     <div key={sponsor.name} className={` flex  justify-center items-center "w-[200px] h-[200px]`}>
                         
