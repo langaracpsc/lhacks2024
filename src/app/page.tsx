@@ -7,9 +7,8 @@ import AskedQuestions from "./Main/AskedQuestions";
 import CarouselDisplay from "./Main/CarouselDisplay";
 import EventSection from "./Main/EventSection";
 import SponsorDisplay from "./Main/SponsorDisplay";
-import SponsorSection from "./Main/SponsorSection";
 import About from "./schedule/about";
-import { useParams } from 'next/navigation' ;
+import { useParams } from 'next/navigation';
 import Events from "./schedule/events";
 import HeroImage from "./HeroImage/HeroImage";
 import SponsorsLogosFooter from "./Footer/logos";
@@ -19,35 +18,32 @@ export default function Home() {
   console.log()
   console.log(params)
 
- 
-    useEffect(() => {
-      const location = window.location.href;
-   
-      if (location.includes("#")) {
-        const getTarget = location.slice(location.indexOf("#")+1,location.length)
-        const targetElement = document.getElementById(getTarget + "question"); // Remove leading "#"
-        if (targetElement) {
-          targetElement.scrollIntoView({ behavior: 'smooth' });
-        }
+
+  useEffect(() => {
+    const location = window.location.href;
+
+    if (location.includes("#")) {
+      const getTarget = location.slice(location.indexOf("#") + 1, location.length)
+      const targetElement = document.getElementById(getTarget + "question"); // Remove leading "#"
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
       }
-      
+    }
 
-    }, []);
-  
-    
+  }, []);
 
-    
   return (
     <div className="flex flex-col gap-20 overflow-x-clip scroll-pt-80">
-      <Header/>
+      <Header />
       <div className="flex flex-col justify-center gap-16 items-center scroll-smooth">
 
-      <span id="top" className="-mt-32 pt-[2em] pb-[1.75rem]"></span>
-        <HeroImage/>
+        <span id="top" className="-mt-32 pt-[2em] pb-[1.75rem]"></span>
 
-        <EventSection/>
+        <HeroImage />
 
-        <CarouselDisplay/>
+        <EventSection />
+
+        <CarouselDisplay />
 
         {/* 
         The header is 20px tall
@@ -57,17 +53,16 @@ export default function Home() {
         it still doesn't line up perfectly but it is good enough
          */}
         <span id="sponsors" className="-mt-32 pt-[2em] pb-[1.75rem]"></span>
-        <SponsorDisplay/>
+        <SponsorDisplay />
 
         <Events />
 
-        <HandbookPage/>
-        
-        <span id="faq" className="-mt-32 pt-[2em] pb-[1.75rem]"></span>
-        <AskedQuestions/>
-        
+        <HandbookPage />
 
-        <About/>
+        <span id="faq" className="-mt-32 pt-[2em] pb-[1.75rem]"></span>
+        <AskedQuestions />
+
+        <About />
 
         <SponsorsLogosFooter></SponsorsLogosFooter>
 
