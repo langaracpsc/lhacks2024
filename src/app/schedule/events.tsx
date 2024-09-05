@@ -20,7 +20,7 @@ export default function Events() {
         </div>
         <div className="p-4 w-11/12 bg-zinc-800 rounded-md">
           {/* <h2>Workshops TBD.</h2> */}
-          <p>Pre-Hackathon workshops and other hackathon activities are still being finalized. Check back soon for more details!</p>
+          <p>PRE-HACKATHON WORKSHOPS ARE NOW LIVE! Register now at <a href="https://lu.ma/lcsc">lu.ma/langaracpsc</a>!</p>
         </div>
         {/* <div className="p-4 w-11/12 bg-zinc-800 rounded-md">
           <h2>Workshops to be decided.</h2>
