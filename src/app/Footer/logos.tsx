@@ -10,7 +10,7 @@ export default function ExecMiniProfiles() {
 
     //need to move to public all pictures, dispose of require
     const people: any[][] = [
-        ["Aaron Chen", "Lead Hackathon Director", "/images/square/aaron.jpg"],
+        ["Aaron Chen", "Logistics Coordinator", "/images/square/aaron.jpg"], 
         ["Ale", "Director of PR", "/images/square/ale.jpg"],
         ["Andrew Lee", "Director of Sponsorships", "/images/square/andrew.jpg"],
         ["Anderson Tseng", "President", "/images/square/andy.jpg"],
@@ -24,8 +24,7 @@ export default function ExecMiniProfiles() {
         ["Mohit Saxena", "Vice President External", "/images/square/mohit.jpg"],
         ["Paul Michalski", "Tech Lead", "/images/square/paul.jpg"],
         ["Rishit Singh", "Tech Lead", "/images/square/rishit.jpg"],
-        ["Saemi Park", "Vice President Internal", "/images/square/saemi.jpg"],
-        ["Tyler Qiu", "Logistics Coordinator", "/images/square/tyler.jpg"],
+        ["Saemi Park", "Lead Hackathon Director", "/images/square/saemi.jpg"],
     ];
     
 
