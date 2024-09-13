@@ -12,7 +12,6 @@ import felipeBarrosmoura from "../../../assets/images/andrew.jpg"; // New static
 import andrewLee from "../../../assets/images/andrew.jpg"; // New static import
 import aprilTernida from "../../../assets/images/april.jpg"; // New static import
 import hanFu from "../../../assets/images/han.jpg"; // New static import
-import tylerQiu from "../../../assets/images/tyler.jpg"; // New static import
 import alejandraArce from "../../../assets/images/ale.jpg"; // New static import
 import claireNguyen from "../../../assets/images/claire.jpg"; // New static import
 import matthewWidjaja from "../../../assets/images/matthew.jpg"; // New static import
@@ -41,12 +40,12 @@ export default function Execs() {
         <div className="flex flex-col items-center w-48 m-4">
           <Image src={saemiPark} className="w-full rounded-md h-64" alt="Saemi Park" />
           <h1 className="text-2xl text-center mt-2">Saemi Park</h1>
-          <h2 className="text-center">Vice President - Internal</h2>
+          <h2 className="text-center">Lead Hackathon Coordinator</h2>
         </div>
         <div className="flex flex-col items-center w-48 m-4">
           <Image src={aaronChen} className="w-full rounded-md h-64" alt="Aaron Chen" />
           <h1 className="text-2xl text-center mt-2">Aaron Chen</h1>
-          <h2 className="text-center">Lead Hackathon Coordiantor</h2>
+          <h2 className="text-center">Logistics Coordiantor</h2>
         </div>
       </div>
 
@@ -87,11 +86,6 @@ export default function Execs() {
         <div className="flex flex-col items-center w-48 m-4">
           <Image src={hanFu} className="w-full rounded-md" alt="Han Fu" />
           <h1 className="text-2xl text-center mt-2">Han Fu</h1>
-          <h2 className="text-center">Director of Events</h2>
-        </div>
-        <div className="flex flex-col items-center w-48 m-4">
-          <Image src={tylerQiu} className="w-full rounded-md" alt="Tyler Qiu" />
-          <h1 className="text-2xl text-center mt-2">Tyler Qiu</h1>
           <h2 className="text-center">Director of Events</h2>
         </div>
         
